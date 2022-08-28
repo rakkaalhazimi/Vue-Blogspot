@@ -1,0 +1,40 @@
+/* Initial Setup */
+:root {
+    --main-bg: #F6F5F5;
+    --second-bg: #E3E3E3;
+    --accend-1: #3BB4C1;
+    --accend-2: #048998;
+    --text-color: #222121;
+    --text-margin: 10px;
+    --space: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    background-color: var(--main-bg);
+    color: var(--text-color);
+    text-align: center;
+}
+
+nav {
+    background-color: var(--second-bg);
+}
+
+nav a {
+    font-weight: bold;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+nav a.router-link-exact-active {
+    color: var(--accend-1);
+}
