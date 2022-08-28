@@ -1,30 +1,45 @@
 <template>
-  <nav>
+  <!-- Navbar -->
+  <nav ref="navbar" @click="getNavHeight">
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/about">Categories</router-link>
   </nav>
-  <router-view/>
+
+  <!-- Content -->
+  <section 
+    class="content"
+    :style="{'min-height': contentMinHeight}" 
+  >
+    <router-view/>
+  </section>
+
+  <!-- Footer -->
+  <footer ref="footer" @click="getFooterHeight">
+    Copyright Rakka
+  </footer>
+
 </template>
 
+<script>
+  export default {
+    data() {
+      return {contentMinHeight: ""}
+    },
+
+    methods: {
+      getNavHeight() {return this.$refs.navbar.offsetHeight},
+      getFooterHeight() {return this.$refs.footer.offsetHeight}
+    },
+
+    mounted() {
+      // Set content min-height according to navbar and footer so that it can fit the viewport
+      this.contentMinHeight = Math.abs(this.getNavHeight() + this.getFooterHeight() - window.innerHeight)
+      this.contentMinHeight = `${this.contentMinHeight}px`
+    }
+  }
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
+  @import "./static/main.css";
+  @import "./static/footer.css";
 </style>
