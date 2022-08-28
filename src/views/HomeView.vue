@@ -1,18 +1,18 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <SearchBar/>
+    <HeaderSection/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import SearchBar from '@/components/SearchBar.vue'
+import HeaderSection from '@/components/HeaderSection.vue';
+
 
 export default {
   name: 'HomeView',
   components: {
-    SearchBar,
-  }
+    HeaderSection,
+}
 }
 </script>
