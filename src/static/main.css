@@ -4,7 +4,9 @@
     --second-bg: #393E46;
     --accend-1: #00ADB5;
     --text-color: #EEEEEE;
-    --text-margin: 10px;
+    
+    --text-margin: 30px;
+    --side-margin: 10vw;
     --space: 20px;
 
     --small-padding: 5px;
@@ -33,4 +35,8 @@ html {
     background-color: var(--main-bg);
     color: var(--text-color);
     text-align: center;
+}
+
+.content {
+    margin: var(--text-margin) var(--side-margin);
 }
