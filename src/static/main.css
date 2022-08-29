@@ -32,13 +32,25 @@ html {
     scroll-behavior: smooth;
 }
 
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
-    background-color: var(--main-bg);
+    background-color: var(--text-color);
     color: var(--text-color);
     text-align: center;
 }
 
 .content {
-    margin: var(--text-margin) var(--side-margin);
+    /* margin: var(--text-margin) var(--side-margin); */
 }

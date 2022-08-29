@@ -4,7 +4,7 @@ nav {
     justify-content: center;
     column-gap: 10px;
     padding: var(--medium-padding);
-    background-color: var(--second-bg);
+    background-color: var(--main-bg);
 }
 
 nav a {
@@ -13,7 +13,6 @@ nav a {
     line-height: var(--navbar-link-height);
     letter-spacing: 1px;
     color: var(--text-color);
-    border-bottom: 2px solid var(--second-bg);
     text-decoration: none;
 }
 
@@ -24,6 +23,5 @@ nav a.router-link-exact-active {
 nav a:hover {
     background-color: var(--accend-1);
     color: var(--text-color);
-    border-bottom: 2px solid var(--accend-1);
     transition: all 0.5s ease;
 }

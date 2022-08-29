@@ -4,13 +4,12 @@
     justify-content: center;
     column-gap: var(--gap);
     row-gap: var(--gap);
-    
+    margin: var(--space) 0;
 }
 
 .blog-card {
     width: var(--card-width);
     height: var(--card-height);
     background-color: var(--text-color);
-    color: var(--main-bg);
-    border: 1px solid black;
+    color: var(--second-bg);
 }

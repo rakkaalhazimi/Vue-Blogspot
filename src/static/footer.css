@@ -1,5 +1,5 @@
 footer {
     padding: var(--big-padding);
-    background-color: var(--text-color);
-    color: var(--main-bg);
+    background-color: var(--accend-1);
+    color: var(--text-color);
 }
