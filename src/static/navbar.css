@@ -3,7 +3,6 @@ nav {
     flex-direction: row;
     justify-content: center;
     column-gap: 10px;
-    margin-bottom: var(--space);
     padding: var(--medium-padding);
     background-color: var(--second-bg);
 }
