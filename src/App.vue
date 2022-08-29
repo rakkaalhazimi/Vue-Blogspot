@@ -21,9 +21,29 @@
 </template>
 
 <script>
+
+  // Blog Posts
+  let blogPosts = [
+    {title: "Blog#1 Title", desc: "Blog Descriptions", tags: "#Tags", id: 1},
+    {title: "Blog#2 Title", desc: "Blog Descriptions", tags: "#Tags", id: 2},
+    {title: "Blog#3 Title", desc: "Blog Descriptions", tags: "#Tags", id: 3},
+    {title: "Blog#4 Title", desc: "Blog Descriptions", tags: "#Tags", id: 4},
+  ]
+
+  // Data to be exported
+  let data = {
+    contentMinHeight: "",
+    blogPosts: blogPosts,
+  }
+
+
   export default {
     data() {
-      return {contentMinHeight: ""}
+      return data
+    },
+
+    provide() {
+      return {blogPosts: this.blogPosts}
     },
 
     methods: {

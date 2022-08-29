@@ -13,16 +13,10 @@
 <script>
   import BlogCard from "./BlogCard.vue"
 
-  let blogPosts = [
-    {title: "Blog#1 Title", desc: "Blog Descriptions", tags: "#Tags", id: 1},
-    {title: "Blog#2 Title", desc: "Blog Descriptions", tags: "#Tags", id: 2},
-    {title: "Blog#3 Title", desc: "Blog Descriptions", tags: "#Tags", id: 3},
-    {title: "Blog#4 Title", desc: "Blog Descriptions", tags: "#Tags", id: 4},
-  ]
-
+  // Receive blog post from root App
   export default {
     name: 'BlogCardList',
     components : {BlogCard},
-    data() {return {blogPosts: blogPosts}}
+    inject: ['blogPosts'],  
   }
 </script>
