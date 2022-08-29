@@ -1,7 +1,7 @@
 <template>
   <!-- Navbar -->
   <nav ref="navbar">
-    <router-link to="/">Home</router-link> |
+    <router-link to="/">Home</router-link>
     <router-link to="/about">Categories</router-link>
   </nav>
 
@@ -41,5 +41,6 @@
 
 <style>
   @import "./static/main.css";
+  @import "./static/navbar.css";
   @import "./static/footer.css";
 </style>
