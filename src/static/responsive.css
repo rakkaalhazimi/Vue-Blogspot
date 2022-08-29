@@ -1,5 +1,5 @@
 @media (max-width: 1200px) {
     .blog-card-list {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, var(--card-width));
     }
 }

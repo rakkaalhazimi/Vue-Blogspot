@@ -1,8 +1,9 @@
 .blog-card-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    row-gap: 5px;
+    grid-template-columns: repeat(3, var(--card-width));
+    justify-content: center;
+    column-gap: var(--gap);
+    row-gap: var(--gap);
     
 }
 

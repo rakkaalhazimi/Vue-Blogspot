@@ -18,6 +18,8 @@
 
     --card-width: 300px;
     --card-height: 300px;
+
+    --gap: 20px;
 }
 
 * {
