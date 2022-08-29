@@ -1,6 +1,9 @@
 <template>
   <div class="blog-card">
-    test
+    <img src="../assets/logo.png" alt="Blog picture"/>
+    <h3>Blog Title</h3>
+    <p>Blog Description</p>
+    <p>#tags</p>
   </div>
 
 </template>

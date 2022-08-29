@@ -11,5 +11,6 @@
     width: var(--card-width);
     height: var(--card-height);
     background-color: var(--text-color);
+    color: var(--main-bg);
     border: 1px solid black;
 }
