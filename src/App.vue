@@ -43,4 +43,6 @@
   @import "./static/main.css";
   @import "./static/navbar.css";
   @import "./static/footer.css";
+  @import "./static/card.css";
+  @import "./static/responsive.css";
 </style>

@@ -13,11 +13,15 @@
 
     --navbar-link-height: 50px;
     --navbar-link-width: 100px;
+
+    --card-width: 300px;
+    --card-height: 300px;
 }
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
