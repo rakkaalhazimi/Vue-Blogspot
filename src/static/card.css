@@ -1,0 +1,17 @@
+.blog-card-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    row-gap: 5px;
+    
+}
+
+.blog-card {
+    width: var(--card-width);
+    height: var(--card-height);
+    background-color: var(--text-color);
+    border: 1px solid black;
+}
+
+.blog-card:last-child {
+}
