@@ -10,6 +10,6 @@
 .blog-card {
     width: var(--card-width);
     height: var(--card-height);
-    background-color: var(--complement);
+    background-color: var(--dominant);
     color: var(--complement);
 }

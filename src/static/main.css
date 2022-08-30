@@ -45,7 +45,7 @@ h3 {
 
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
-    background-color: var(--complement);
+    background-color: var(--dominant);
     color: var(--complement);
     text-align: center;
 }
