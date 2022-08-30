@@ -51,5 +51,5 @@ h3 {
 }
 
 .content {
-    /* margin: var(--text-margin) var(--side-margin); */
+    margin-bottom: var(--space);
 }
