@@ -6,7 +6,3 @@
     background-color: var(--main-bg);
     color: var(--text-color);
 }
-
-.header-section h1 {
-    font-size: 3em;
-}
