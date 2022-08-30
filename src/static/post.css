@@ -1,6 +1,6 @@
 .blog-post {
     margin: var(--side-margin) var(--side-margin);
-    color: var(--main-bg);
+    color: var(--dominant);
 }
 
 .blog-title {
@@ -8,5 +8,5 @@
 }
 
 .blog-content {
-    
+
 }
