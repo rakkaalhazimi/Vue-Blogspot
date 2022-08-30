@@ -3,3 +3,13 @@
         grid-template-columns: repeat(2, var(--card-width));
     }
 }
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .blog-card-list {
+        grid-template-columns: repeat(1, var(--card-width));
+    }
+}

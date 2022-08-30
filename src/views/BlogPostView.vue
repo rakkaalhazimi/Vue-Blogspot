@@ -1,10 +1,8 @@
 <template>
-  <div class="blog-post">
-    <BlogPost
-      :title="post.title"
-      :content="post.content"
-    />
-  </div>
+  <BlogPost
+    :title="post.title"
+    :content="post.content"
+  />
 </template>
 
 <script>
