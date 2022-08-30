@@ -1,10 +1,10 @@
 .blog-post {
     margin: var(--side-margin) var(--side-margin);
-    color: var(--dominant);
+    color: var(--complement);
 }
 
 .blog-title {
-    margin-bottom: var(--space);
+    margin-bottom: var(--text-margin);
 }
 
 .blog-content {
