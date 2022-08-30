@@ -4,5 +4,5 @@
     justify-content: center;
     height: 30vh;
     background-color: var(--dominant);
-    color: var(--text-color);
+    color: var(--complement);
 }

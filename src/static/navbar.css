@@ -12,7 +12,7 @@ nav a {
     height: var(--navbar-link-height);
     line-height: var(--navbar-link-height);
     letter-spacing: 1px;
-    color: var(--text-color);
+    color: var(--complement);
     text-decoration: none;
 }
 
@@ -22,6 +22,6 @@ nav a.router-link-exact-active {
 
 nav a:hover {
     background-color: var(--accent);
-    color: var(--text-color);
+    color: var(--complement);
     transition: all 0.5s ease;
 }

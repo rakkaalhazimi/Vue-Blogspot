@@ -1,9 +1,8 @@
 /* Initial Setup */
 :root {
     --dominant: #222831;
-    --complement: #393E46;
-    --accent: #00ADB5;
-    --text-color: #EEEEEE;
+    --complement: #D3FBD8;
+    --accent: #00C6B9;
     
     --text-margin: 30px;
     --side-margin: 5vw;
@@ -46,8 +45,8 @@ h3 {
 
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
-    background-color: var(--text-color);
-    color: var(--text-color);
+    background-color: var(--complement);
+    color: var(--complement);
     text-align: center;
 }
 
