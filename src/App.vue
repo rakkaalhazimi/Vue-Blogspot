@@ -24,31 +24,49 @@
 
   // Blog Posts
   let blogPosts = [
-    {title: "Blog#1 Title", desc: "Blog Descriptions", tags: "#Tags", id: 1},
-    {title: "Blog#2 Title", desc: "Blog Descriptions", tags: "#Tags", id: 2},
-    {title: "Blog#3 Title", desc: "Blog Descriptions", tags: "#Tags", id: 3},
-    {title: "Blog#4 Title", desc: "Blog Descriptions", tags: "#Tags", id: 4},
+    {id: 1, title: "Blog#1 Title", desc: "Blog Descriptions", tags: "#Tags", content: "Content Blog#1"},
+    {id: 2, title: "Blog#2 Title", desc: "Blog Descriptions", tags: "#Tags", content: "Content Blog#2"},
+    {id: 3, title: "Blog#3 Title", desc: "Blog Descriptions", tags: "#Tags", content: "Content Blog#3"},
+    {id: 4, title: "Blog#4 Title", desc: "Blog Descriptions", tags: "#Tags", content: "Content Blog#4"},
   ]
+
 
   // Data to be exported
   let data = {
     contentMinHeight: "",
+  }
+
+
+  // Data or functions to be provided to child compoenents
+  let provided = {
     blogPosts: blogPosts,
+    getPostFromId: getPostFromId
+  }
+
+
+  // Function to be exported
+  function getNavHeight() {return this.$refs.navbar.offsetHeight}
+  function getFooterHeight() {return this.$refs.footer.offsetHeight}
+
+
+  // Function to be provided to child components
+  function getPostFromId(id, posts) {
+    for (let post of posts) {
+      if (post.id == id) {return post}
+    }
+    return null
   }
 
 
   export default {
-    data() {
-      return data
-    },
+    data() {return data},
 
-    provide() {
-      return {blogPosts: this.blogPosts}
-    },
+    provide() {return provided},
 
     methods: {
-      getNavHeight() {return this.$refs.navbar.offsetHeight},
-      getFooterHeight() {return this.$refs.footer.offsetHeight}
+      getNavHeight,
+      getFooterHeight,
+      getPostFromId
     },
 
     mounted() {
@@ -65,5 +83,6 @@
   @import "./static/header.css";
   @import "./static/footer.css";
   @import "./static/card.css";
+  @import "./static/post.css";
   @import "./static/responsive.css";
 </style>
