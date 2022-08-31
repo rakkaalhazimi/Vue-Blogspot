@@ -10,7 +10,8 @@
 import { ref, reactive, provide } from "vue"
 import NavigationBar from "./components/Navigation/NavigationBar.vue"
 import FooterSection from "./components/Footer/FooterSection.vue"
-import ContentSection from "./components/Content/ContentSection.vue";
+import ContentSection from "./components/Content/ContentSection.vue"
+
 
 // Blog Posts
 let blogPosts = reactive([
@@ -29,9 +30,6 @@ sample
 // Data or functions to be provided to child compoenents
 provide("blogPosts", blogPosts)
 provide("getPostFromId", getPostFromId)
-
-
-// Function to be exported
 
 
 // Function to be provided to child components
@@ -87,6 +85,10 @@ h2 {
 
 h3 {
   font-size: 1.5em;
+}
+
+button {
+  border: none;
 }
 
 #app {
