@@ -10,13 +10,10 @@
   </div>
 </template>
 
-<script>
+<script setup>
+  import { inject } from "vue";
   import BlogCard from "./BlogCard.vue"
 
   // Receive blog post from root App
-  export default {
-    name: 'BlogCardList',
-    components : {BlogCard},
-    inject: ['blogPosts'],  
-  }
+  let blogPosts = inject("blogPosts")
 </script>

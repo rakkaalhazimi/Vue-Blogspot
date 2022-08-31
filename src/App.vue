@@ -6,10 +6,7 @@
   </nav>
 
   <!-- Content -->
-  <section 
-    class="content"
-    :style="{'min-height': contentMinHeight}" 
-  >
+  <section class="content">
     <router-view/>
   </section>
 
@@ -20,33 +17,29 @@
 
 </template>
 
-<script>
+<script setup>
+  import {ref, reactive, provide} from "vue"
 
   // Blog Posts
-  let blogPosts = [
+  let blogPosts = reactive([
     {id: 1, title: "Blog#1 Title", desc: "Blog Descriptions", tags: "#Tags", content: "Content Blog#1"},
     {id: 2, title: "Blog#2 Title", desc: "Blog Descriptions", tags: "#Tags", content: "Content Blog#2"},
     {id: 3, title: "Blog#3 Title", desc: "Blog Descriptions", tags: "#Tags", content: "Content Blog#3"},
     {id: 4, title: "Blog#4 Title", desc: "Blog Descriptions", tags: "#Tags", content: "Content Blog#4"},
-  ]
+  ])
 
 
   // Data to be exported
-  let data = {
-    contentMinHeight: "",
-  }
+  let sample = ref(0)
+  sample
 
 
   // Data or functions to be provided to child compoenents
-  let provided = {
-    blogPosts: blogPosts,
-    getPostFromId: getPostFromId
-  }
+  provide("blogPosts", blogPosts)
+  provide("getPostFromId", getPostFromId)
 
 
   // Function to be exported
-  function getNavHeight() {return this.$refs.navbar.offsetHeight}
-  function getFooterHeight() {return this.$refs.footer.offsetHeight}
 
 
   // Function to be provided to child components
@@ -57,24 +50,6 @@
     return null
   }
 
-
-  export default {
-    data() {return data},
-
-    provide() {return provided},
-
-    methods: {
-      getNavHeight,
-      getFooterHeight,
-      getPostFromId
-    },
-
-    mounted() {
-      // Set content min-height according to navbar and footer so that it can fit the viewport
-      this.contentMinHeight = Math.abs(this.getNavHeight() + this.getFooterHeight() - window.innerHeight)
-      this.contentMinHeight = `${this.contentMinHeight}px`
-    }
-  }
 </script>
 
 <style>

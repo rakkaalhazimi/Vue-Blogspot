@@ -5,11 +5,13 @@
   </div>
 </template>
 
-<script>
-  export default {
-    name: 'BlogPost',
-    props: ['title', 'content']
-  }
+<script setup>
+  import { defineProps } from 'vue';
+
+  defineProps({
+    title: String,
+    content: String,
+  })
 </script>
 
 <style></style>

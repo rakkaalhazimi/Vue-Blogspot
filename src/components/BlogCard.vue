@@ -10,9 +10,12 @@
 
 </template>
 
-<script>
-   export default {
-    name: 'BlogCard',
-    props: ['title', 'desc', 'tags']
-  }
+<script setup>
+  import { defineProps } from 'vue';
+
+  defineProps({
+    title: String, 
+    desc: String, 
+    tags: String
+  })
 </script>
