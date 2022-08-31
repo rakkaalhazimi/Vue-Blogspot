@@ -1,24 +1,16 @@
 <template>
-  <!-- Navbar -->
-  <nav ref="navbar">
-    <router-link to="/">Home</router-link>
-    <router-link to="/about">Categories</router-link>
-  </nav>
+  <NavigationBar />
 
-  <!-- Content -->
-  <section class="content">
-    <router-view />
-  </section>
+  <ContentSection />
 
-  <!-- Footer -->
-  <footer ref="footer">
-    Copyright Rakka
-  </footer>
-
+  <FooterSection />
 </template>
 
 <script setup>
 import { ref, reactive, provide } from "vue"
+import NavigationBar from "./components/NavigationBar.vue"
+import FooterSection from "./components/FooterSection.vue"
+import ContentSection from "./components/ContentSection.vue";
 
 // Blog Posts
 let blogPosts = reactive([
@@ -49,7 +41,6 @@ function getPostFromId(id, posts) {
   }
   return null
 }
-
 </script>
 
 <style>
@@ -103,44 +94,6 @@ h3 {
   background-color: var(--dominant);
   color: var(--complement);
   text-align: center;
-}
-
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  column-gap: 10px;
-  padding: var(--medium-padding);
-  background-color: var(--dominant);
-}
-
-nav a {
-  width: var(--navbar-link-width);
-  height: var(--navbar-link-height);
-  line-height: var(--navbar-link-height);
-  letter-spacing: 1px;
-  color: var(--complement);
-  text-decoration: none;
-}
-
-nav a.router-link-exact-active {
-  color: var(--accent);
-}
-
-nav a:hover {
-  background-color: var(--complement);
-  color: var(--dominant);
-  transition: all 0.5s ease;
-}
-
-.content {
-  margin-bottom: var(--space);
-}
-
-footer {
-  padding: var(--big-padding);
-  background-color: var(--complement);
-  color: var(--dominant);
 }
 
 @media (max-width: 600px) {
