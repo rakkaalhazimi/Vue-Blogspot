@@ -8,7 +8,7 @@
 <script setup>
   import { inject } from "vue";
   import { useRoute } from "vue-router";
-  import BlogPost from "@/components/BlogPost.vue";
+  import BlogPost from "@/components/Blog/BlogPost.vue";
 
   // Use router
   const route = useRoute()

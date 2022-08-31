@@ -8,9 +8,9 @@
 
 <script setup>
 import { ref, reactive, provide } from "vue"
-import NavigationBar from "./components/NavigationBar.vue"
-import FooterSection from "./components/FooterSection.vue"
-import ContentSection from "./components/ContentSection.vue";
+import NavigationBar from "./components/Navigation/NavigationBar.vue"
+import FooterSection from "./components/Footer/FooterSection.vue"
+import ContentSection from "./components/Content/ContentSection.vue";
 
 // Blog Posts
 let blogPosts = reactive([

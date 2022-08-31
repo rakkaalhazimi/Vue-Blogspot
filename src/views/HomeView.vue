@@ -7,6 +7,6 @@
 
 <script setup>
 // @ is an alias to /src
-import HeaderSection from '@/components/HeaderSection.vue';
-import BlogCardList from '@/components/BlogCardList.vue';
+import HeaderSection from '@/components/Header/HeaderSection.vue';
+import BlogCardList from '@/components/Blog/BlogCardList.vue';
 </script>
