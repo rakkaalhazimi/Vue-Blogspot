@@ -6,6 +6,6 @@
 
 <style>
 .content {
-  margin-bottom: var(--space);
+  margin: var(--space) 0;
 }
 </style>

@@ -10,5 +10,6 @@
     background-color: var(--accent);
     color: var(--dominant);
     font-weight: bold;
+    cursor: pointer;
   }
 </style>
