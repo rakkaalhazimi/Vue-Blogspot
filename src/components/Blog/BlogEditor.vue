@@ -1,4 +1,17 @@
 <template>
+  <form id="post-form">
+    <div class="post-form-item">
+      <p>Title</p>
+      <input id="post-title" type="text" />
+    </div>
+
+    <div class="post-form-item">
+      <p>Date</p>
+      <input id="post-date" type="date" />
+    </div>
+  </form>
+
+
   <div id="editor" :editor="editor"></div>
 </template>
 
@@ -26,6 +39,23 @@ onMounted(() => {
 </script>
 
 <style>
+.post-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.post-form-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  text-align: left;
+}
+
+.post-form-item input {
+  padding: var(--small-padding);
+}
+
 #editor,
 .ql-toolbar {
   background-color: var(--complement);
