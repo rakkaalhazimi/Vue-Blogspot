@@ -1,6 +1,6 @@
 <template>
   <h1>Add New Post</h1>
-  <BlogEditor />
+  <BlogEditor v-once />
 </template>
 
 <script setup>
