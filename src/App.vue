@@ -92,6 +92,9 @@ button {
 }
 
 #app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   background-color: var(--dominant);
   color: var(--complement);
