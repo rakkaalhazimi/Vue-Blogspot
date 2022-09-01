@@ -101,6 +101,10 @@ button {
   text-align: center;
 }
 
+.content-view {
+  margin: 0 5vw;
+}
+
 @media (max-width: 600px) {
   h1 {
     font-size: 2.5em;
