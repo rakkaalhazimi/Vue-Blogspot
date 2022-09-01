@@ -1,8 +1,10 @@
 <template>
-  <BlogPost
-    :title="post.title"
-    :content="post.content"
-  />
+  <div class="content-view">
+    <BlogPost
+      :title="post.title"
+      :content="post.content"
+    />
+  </div>
 </template>
 
 <script setup>
