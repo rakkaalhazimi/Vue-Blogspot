@@ -1,14 +1,14 @@
 <template>
   <div id="home" class="content-view">
-    <HeaderSection/>
-    <AddBlogButton/>
+    <SectionHeaderHome/>
+    <ButtonAddPost/>
     <BlogCardList/>
   </div>
 </template>
 
 <script setup>
 // @ is an alias to /src
-import HeaderSection from '@/components/Header/HeaderSection.vue';
-import BlogCardList from '@/components/Blog/BlogCardList.vue';
-import AddBlogButton from '@/components/Buttons/AddBlogButton.vue';
+import SectionHeaderHome from '@/components/SectionHeaderHome.vue';
+import BlogCardList from '@/components/BlogCardList.vue';
+import ButtonAddPost from '@/components/ButtonAddPost.vue';
 </script>

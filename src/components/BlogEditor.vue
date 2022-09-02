@@ -15,7 +15,7 @@
       <div id="editor" :editor="editor"></div>
     </div>
 
-    <PublishButton @click.prevent="getContentText" />
+    <ButtonPublishPost @click.prevent="getContentText" />
 
   </form>
 
@@ -28,7 +28,7 @@ import Quill from "quill"
 import "quill/dist/quill.core.css"
 import "quill/dist/quill.snow.css"
 import "quill/dist/quill.bubble.css"
-import PublishButton from "../Buttons/PublishButton.vue"
+import ButtonPublishPost from "./ButtonPublishPost.vue"
 
 
 const editor = ref()

@@ -5,5 +5,5 @@
 </template>
 
 <script setup>
-import BlogEditor from '@/components/Blog/BlogEditor.vue';
+import BlogEditor from '@/components/BlogEditor.vue';
 </script>
