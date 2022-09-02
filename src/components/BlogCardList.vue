@@ -21,7 +21,7 @@ let blogPosts = inject("blogPosts")
   justify-content: center;
   column-gap: var(--gap);
   row-gap: var(--gap);
-  margin: var(--space) 0;
+  margin: var(--medium-space) 0;
 }
 
 @media (max-width: 1200px) {

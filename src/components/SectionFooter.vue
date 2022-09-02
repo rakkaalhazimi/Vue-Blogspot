@@ -55,7 +55,7 @@ footer {
 }
 
 .contact-container {
-  margin-bottom: var(--space);
+  margin-bottom: var(--medium-space);
 }
 
 .contact-title,

@@ -61,7 +61,7 @@ onMounted(() => {
 .post-form-item {
   display: flex;
   flex-direction: column;
-  margin-bottom: var(--space);
+  margin-bottom: var(--medium-space);
   text-align: left;
 }
 

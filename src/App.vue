@@ -55,7 +55,7 @@ function getPostFromId(id, posts) {
   --side-margin: 5vw;
   
   --small-space: 10px;
-  --space: 20px;
+  --medium-space: 20px;
   --big-space: 30px;
 
   --small-padding: 5px;
