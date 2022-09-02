@@ -61,11 +61,12 @@ onMounted(() => {
 .post-form-item {
   display: flex;
   flex-direction: column;
-  max-width: 300px;
+  margin-bottom: var(--space);
   text-align: left;
 }
 
 .post-form-item input {
+  max-width: 300px;
   padding: var(--small-padding);
 }
 
