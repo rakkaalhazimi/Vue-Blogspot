@@ -53,4 +53,33 @@ footer {
   background-color: var(--complement);
   color: var(--dominant);
 }
+
+.contact-container {
+  margin-bottom: var(--space);
+}
+
+.contact-title,
+.made-with-title {
+  margin-bottom: var(--small-space);
+}
+
+.contact-icon-list,
+.made-with-icon-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: var(--gap);
+}
+
+.contact-icon-item>a,
+.made-with-icon-item>a {
+  color: var(--dominant);
+  font-size: var(--icon-size);
+}
+
+.contact-icon-item>a:hover,
+.made-with-icon-item>a:hover {
+  color: var(--accent);
+  transition: all 0.5 ease;
+}
 </style>
