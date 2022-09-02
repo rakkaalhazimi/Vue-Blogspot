@@ -7,7 +7,7 @@
 <style>
   .add-blog-btn {
     padding: var(--medium-padding);
-    background-color: var(--accent);
+    background-color: var(--complement);
     color: var(--dominant);
     font-weight: bold;
     cursor: pointer;
