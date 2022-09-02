@@ -21,7 +21,6 @@ nav a {
   line-height: var(--navbar-link-height);
   letter-spacing: 1px;
   color: var(--complement);
-  text-decoration: none;
 }
 
 nav a.router-link-exact-active {
