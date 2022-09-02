@@ -9,19 +9,30 @@
       <p>Date</p>
       <input id="post-date" type="date" />
     </div>
+
+    <div class="post-form-item">
+      <p>Post</p>
+      <div id="editor" :editor="editor"></div>
+    </div>
+
+    <PublishButton @click.prevent="getContentText" />
+
   </form>
 
 
-  <div id="editor" :editor="editor"></div>
 </template>
 
 <script setup>
-import { onMounted } from "vue"
+import { ref, onMounted } from "vue"
 import Quill from "quill"
 import "quill/dist/quill.core.css"
 import "quill/dist/quill.snow.css"
 import "quill/dist/quill.bubble.css"
+import PublishButton from "../Buttons/PublishButton.vue"
 
+
+const editor = ref()
+let getContentText = () => {console.log(editor.value.getText())}
 
 onMounted(() => {
   let options = {
@@ -31,8 +42,10 @@ onMounted(() => {
   }
 
 
-  let editor = new Quill("#editor", options)
-  editor.on("text-change", () => { })
+  editor.value = new Quill("#editor", options)
+  // editor.on("text-change", () => { })
+
+  
 })
 
 
