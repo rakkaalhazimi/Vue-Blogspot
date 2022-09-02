@@ -1,6 +1,48 @@
 <template>
-  <footer ref="footer">
-    Copyright Rakka
+  <footer>
+    <div class="contact-container">
+
+      <h4 class="contact-title">Contact Me</h4>
+      <ul class="contact-icon-list">
+        <li class="contact-icon-item">
+          <a href="#">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+        </li>
+        <li class="contact-icon-item">
+          <a href="#">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="contact-icon-item">
+          <a href="#">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li class="contact-icon-item">
+          <a href="#">
+            <i class="fa-brands fa-kaggle"></i>
+          </a>
+        </li>
+        <li class="contact-icon-item">
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="made-with-container">
+      <h4 class="made-with-title">Made With</h4>
+      <ul class="made-with-icon-list">
+        <li class="made-with-icon-item">
+          <a>
+            <i class="fa-brands fa-vuejs"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
   </footer>
 </template>
 

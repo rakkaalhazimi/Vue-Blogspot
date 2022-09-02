@@ -11,6 +11,9 @@ import { ref, reactive, provide } from "vue"
 import NavigationBar from "./components/Navigation/NavigationBar.vue"
 import FooterSection from "./components/Footer/FooterSection.vue"
 import ContentSection from "./components/Content/ContentSection.vue"
+import "@fortawesome/fontawesome-free/js/brands.js"
+import "@fortawesome/fontawesome-free/js/regular.js"
+import "@fortawesome/fontawesome-free/js/fontawesome.js"
 
 
 // Blog Posts
