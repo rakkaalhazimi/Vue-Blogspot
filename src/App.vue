@@ -53,7 +53,10 @@ function getPostFromId(id, posts) {
 
   --text-margin: 20px;
   --side-margin: 5vw;
+  
+  --small-space: 10px;
   --space: 20px;
+  --big-space: 30px;
 
   --small-padding: 5px;
   --medium-padding: 10px;
@@ -64,6 +67,8 @@ function getPostFromId(id, posts) {
 
   --card-width: 300px;
   --card-height: 300px;
+
+  --icon-size: 1.2em;
 
   --gap: 20px;
 }
@@ -90,12 +95,20 @@ h3 {
   font-size: 1.5em;
 }
 
+a {
+  text-decoration: none;
+}
+
 button {
   border: none;
 }
 
 input:focus {
   outline: none;
+}
+
+ul {
+  list-style-type: none;
 }
 
 #app {
