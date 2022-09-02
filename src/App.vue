@@ -91,6 +91,10 @@ button {
   border: none;
 }
 
+input:focus {
+  outline: none;
+}
+
 #app {
   display: flex;
   flex-direction: column;
