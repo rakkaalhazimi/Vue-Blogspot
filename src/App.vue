@@ -106,12 +106,24 @@ input:focus {
 }
 
 .content-view {
-  margin: 0 5vw;
+  margin: 0 10vw;
 }
 
+/* Wide Screen: Desktop */
+@media (min-width: 1200px) {
+  .content-view {
+    margin: 0 20vw;
+  }
+}
+
+/* Small Screen: Tablet, Smartphone */
 @media (max-width: 600px) {
   h1 {
     font-size: 2.5em;
+  }
+
+  .content-view {
+    margin: 0 2vw;
   }
 
 }
