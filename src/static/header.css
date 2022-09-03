@@ -2,7 +2,15 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 30vh;
+    align-items: center;
+    height: 40vh;
     background-color: var(--dominant);
     color: var(--text-dark);
+}
+
+header img {
+    margin: 0 auto;
+    width: var(--photo-width);
+    height: var(--photo-height);
+    border-radius: 100px;
 }

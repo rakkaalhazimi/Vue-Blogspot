@@ -5,6 +5,11 @@
         margin: 0 20vw;
     }
 
+    /* Header */
+    header {
+        height: 30vh;
+    }
+
     /* Blog */
     .blog-card-list {
         grid-template-columns: repeat(3, var(--card-width));
