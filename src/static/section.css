@@ -1,0 +1,84 @@
+/* Navigation Section */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10px;
+    padding: var(--medium-padding);
+    background-color: var(--dominant);
+}
+
+nav a {
+    width: var(--navbar-link-width);
+    height: var(--navbar-link-height);
+    line-height: var(--navbar-link-height);
+    letter-spacing: 1px;
+    color: var(--complement);
+}
+
+nav a.router-link-exact-active {
+    color: var(--accent);
+}
+
+nav a:hover {
+    background-color: var(--complement);
+    color: var(--dominant);
+    transition: all 0.5s ease;
+}
+
+/*  */
+
+/* Content Section */
+.content {
+    margin: var(--medium-space) 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30vh;
+    background-color: var(--dominant);
+    color: var(--complement);
+}
+
+/*  */
+
+/* Footer Section */
+footer {
+    margin-top: auto;
+    padding: var(--big-padding);
+    background-color: var(--complement);
+    color: var(--dominant);
+}
+
+.contact-container {
+    margin-bottom: var(--medium-space);
+}
+
+.contact-title,
+.made-with-title {
+    margin-bottom: var(--small-space);
+}
+
+.contact-icon-list,
+.made-with-icon-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--gap);
+}
+
+.contact-icon-item>a,
+.made-with-icon-item>a {
+    color: var(--dominant);
+    font-size: var(--icon-size);
+}
+
+.contact-icon-item>a:hover,
+.made-with-icon-item>a:hover {
+    color: var(--accent);
+    transition: all 0.5 ease;
+}
+
+/*  */

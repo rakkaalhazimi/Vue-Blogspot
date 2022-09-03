@@ -3,13 +3,3 @@
     <button class="add-blog-btn">Add Blog</button>
   </router-link>
 </template>
-
-<style>
-  .add-blog-btn {
-    padding: var(--medium-padding);
-    background-color: var(--complement);
-    color: var(--dominant);
-    font-weight: bold;
-    cursor: pointer;
-  }
-</style>

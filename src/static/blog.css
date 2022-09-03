@@ -1,0 +1,69 @@
+/* BlogCardList */
+.blog-card-list {
+    display: grid;
+    grid-template-columns: repeat(3, var(--card-width));
+    justify-content: center;
+    column-gap: var(--gap);
+    row-gap: var(--gap);
+    margin: var(--medium-space) 0;
+}
+
+/*  */
+
+/* BlogCard */
+.blog-card {
+    width: var(--card-width);
+    height: var(--card-height);
+    background-color: var(--dominant);
+    color: var(--complement);
+}
+
+.blog-card:hover {
+    /* box-shadow: 0px 2px 5px 1px var(--accent); */
+    background-color: var(--complement);
+    color: var(--dominant);
+    transition: all 0.5s ease;
+}
+
+/*  */
+
+
+/* BlogPost */
+.blog-post {
+    margin: var(--side-margin) var(--side-margin);
+    color: var(--complement);
+}
+
+.blog-title {
+    margin-bottom: var(--text-margin);
+}
+
+/*  */
+
+
+/* BlogEditor */
+.post-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+
+.post-form-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--medium-space);
+    text-align: left;
+}
+
+.post-form-item input {
+    max-width: 300px;
+    padding: var(--small-padding);
+}
+
+#editor,
+.ql-toolbar {
+    background-color: var(--complement);
+    color: var(--dominant);
+}
+
+/*  */

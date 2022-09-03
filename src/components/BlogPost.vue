@@ -13,15 +13,3 @@ defineProps({
   content: String,
 })
 </script>
-
-<style>
-.blog-post {
-  margin: var(--side-margin) var(--side-margin);
-  color: var(--complement);
-}
-
-.blog-title {
-  margin-bottom: var(--text-margin);
-}
-
-</style>

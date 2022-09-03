@@ -50,29 +50,3 @@ onMounted(() => {
 
 
 </script>
-
-<style>
-.post-form {
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap);
-}
-
-.post-form-item {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: var(--medium-space);
-  text-align: left;
-}
-
-.post-form-item input {
-  max-width: 300px;
-  padding: var(--small-padding);
-}
-
-#editor,
-.ql-toolbar {
-  background-color: var(--complement);
-  color: var(--dominant);
-}
-</style>

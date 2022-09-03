@@ -3,9 +3,3 @@
     <router-view />
   </section>
 </template>
-
-<style>
-.content {
-  margin: var(--medium-space) 0;
-}
-</style>

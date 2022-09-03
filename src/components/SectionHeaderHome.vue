@@ -7,14 +7,3 @@
 
 <script setup>
 </script>
-
-<style>
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 30vh;
-  background-color: var(--dominant);
-  color: var(--complement);
-}
-</style>
