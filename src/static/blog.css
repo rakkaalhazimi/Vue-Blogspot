@@ -55,7 +55,6 @@
 }
 
 .post-form-item input {
-    max-width: 300px;
     padding: var(--small-padding);
 }
 
