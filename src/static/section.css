@@ -13,7 +13,7 @@ nav a {
     height: var(--navbar-link-height);
     line-height: var(--navbar-link-height);
     letter-spacing: 1px;
-    color: var(--complement);
+    color: var(--text-dark);
 }
 
 nav a.router-link-exact-active {
@@ -22,7 +22,7 @@ nav a.router-link-exact-active {
 
 nav a:hover {
     background-color: var(--complement);
-    color: var(--dominant);
+    color: var(--text-light);
     transition: all 0.5s ease;
 }
 
@@ -39,7 +39,7 @@ header {
     justify-content: center;
     height: 30vh;
     background-color: var(--dominant);
-    color: var(--complement);
+    color: var(--text-dark);
 }
 
 /*  */
@@ -48,8 +48,8 @@ header {
 footer {
     margin-top: auto;
     padding: var(--big-padding);
-    background-color: var(--complement);
-    color: var(--dominant);
+    background-color: var(--text-dark);
+    color: var(--text-light);
 }
 
 .contact-container {
@@ -71,7 +71,7 @@ footer {
 
 .contact-icon-item>a,
 .made-with-icon-item>a {
-    color: var(--dominant);
+    color: var(--text-light);
     font-size: var(--icon-size);
 }
 

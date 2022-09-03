@@ -2,6 +2,8 @@
   --dominant: #222831;
   --complement: #D3FBD8;
   --accent: #00C6B9;
+  --text-dark: #f0eeee;
+  --text-light: #181818;
 
   --text-margin: 20px;
   --side-margin: 5vw;
@@ -69,7 +71,7 @@ ul {
   min-height: 100vh;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   background-color: var(--dominant);
-  color: var(--complement);
+  color: var(--text-dark);
   text-align: center;
 }
 

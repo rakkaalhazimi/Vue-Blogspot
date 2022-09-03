@@ -1,7 +1,7 @@
 .add-blog-btn {
     padding: var(--medium-padding);
     background-color: var(--complement);
-    color: var(--dominant);
+    color: var(--text-light);
     font-weight: bold;
     cursor: pointer;
 }
@@ -9,6 +9,6 @@
 .post-publish-btn {
     padding: var(--medium-padding);
     background-color: var(--complement);
-    color: var(--dominant);
+    color: var(--text-light);
     cursor: pointer;
 }
