@@ -42,12 +42,36 @@ import ButtonPublishPost from "./ButtonPublishPost.vue"
 
 
 const editor = ref()
-let getContentText = () => {console.log(editor.value.getText())}
+
+// List of toolbar see https://quilljs.com/docs/formats/
+const toolbarOptions = [
+  [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+  ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
+
+  [{ 'align': [] }],
+  [{ 'list': 'ordered' }, { 'list': 'bullet' }],
+  [{ 'indent': '-1' }, { 'indent': '+1' }],          // outdent/indent
+  [{ 'direction': 'rtl' }],                         // text direction
+  
+  [{ 'script': 'sub' }, { 'script': 'super' }],      // superscript/subscript
+  ['blockquote', 'code-block'],
+
+  [{ 'color': [] }, { 'background': [] }],          // dropdown with defaults from theme
+
+  ['link', 'image', 'formula'],                     // embed
+
+  ['clean']                                         // remove formatting button
+];
+let getContentText = () => { console.log(editor.value.getContents()) }
 
 onMounted(() => {
   let options = {
     theme: "snow",
-    modules: { toolbar: {} },
+
+    modules: {
+      toolbar: toolbarOptions
+    },
+
     placeholder: "Enter text here..."
   }
 
@@ -55,7 +79,7 @@ onMounted(() => {
   editor.value = new Quill("#editor", options)
   // editor.on("text-change", () => { })
 
-  
+
 })
 
 
