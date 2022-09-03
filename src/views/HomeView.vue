@@ -7,7 +7,6 @@
 </template>
 
 <script setup>
-// @ is an alias to /src
 import SectionHeaderHome from '@/components/SectionHeaderHome.vue';
 import BlogCardList from '@/components/BlogCardList.vue';
 import ButtonAddPost from '@/components/ButtonAddPost.vue';

@@ -4,6 +4,3 @@
     <p>Where machine learning is taught concisely</p>
   </header>
 </template>
-
-<script setup>
-</script>
