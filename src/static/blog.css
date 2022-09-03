@@ -1,11 +1,10 @@
 /* BlogCardList */
 .blog-card-list {
     display: grid;
-    grid-template-columns: repeat(3, var(--card-width));
+    grid-template-columns: repeat(2, var(--card-width));
     justify-content: center;
     column-gap: var(--gap);
     row-gap: var(--gap);
-    margin: var(--medium-space) 0;
 }
 
 /*  */

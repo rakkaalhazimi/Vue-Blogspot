@@ -7,7 +7,7 @@
 
     /* Blog */
     .blog-card-list {
-        grid-template-columns: repeat(2, var(--card-width));
+        grid-template-columns: repeat(3, var(--card-width));
     }
 }
 

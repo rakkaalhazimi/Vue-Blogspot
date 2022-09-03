@@ -30,9 +30,16 @@ nav a:hover {
 
 /* Content Section */
 .content {
-    margin: var(--medium-space) 0;
+    margin: 0 0;
 }
 
+.content-view {
+    margin: 0 5vw;
+}
+
+.content-view > * {
+    margin-bottom: var(--big-space);
+}
 
 /*  */
 
