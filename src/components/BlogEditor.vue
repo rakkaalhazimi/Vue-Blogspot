@@ -2,7 +2,17 @@
   <form id="post-form">
     <div class="post-form-item">
       <p>Title</p>
-      <input id="post-title" type="text" />
+      <input id="post-title" type="text" placeholder="Enter title" />
+    </div>
+
+    <div class="post-form-item">
+      <p>Descriptions</p>
+      <input id="post-desc" type="text" placeholder="Enter description" />
+    </div>
+
+    <div class="post-form-item">
+      <p>Tag</p>
+      <input id="post-tag" type="text" />
     </div>
 
     <div class="post-form-item">
