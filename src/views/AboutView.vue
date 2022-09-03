@@ -1,9 +1,9 @@
 <template>
   <div id="about" class="content-view">
-    <SectionHeaderAbout/>
+    <HeaderAbout/>
   </div>
 </template>
 
 <script setup>
-import SectionHeaderAbout from '@/components/SectionHeaderAbout.vue';
+import HeaderAbout from '@/components/HeaderAbout.vue';
 </script>

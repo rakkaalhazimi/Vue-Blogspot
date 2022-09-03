@@ -1,13 +1,13 @@
 <template>
   <div id="home" class="content-view">
-    <SectionHeaderHome/>
+    <HeaderHome/>
     <ButtonAddPost/>
     <BlogCardList/>
   </div>
 </template>
 
 <script setup>
-import SectionHeaderHome from '@/components/SectionHeaderHome.vue';
+import HeaderHome from '@/components/HeaderHome.vue';
 import BlogCardList from '@/components/BlogCardList.vue';
 import ButtonAddPost from '@/components/ButtonAddPost.vue';
 </script>

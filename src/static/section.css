@@ -33,14 +33,6 @@ nav a:hover {
     margin: var(--medium-space) 0;
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 30vh;
-    background-color: var(--dominant);
-    color: var(--text-dark);
-}
 
 /*  */
 
