@@ -25,7 +25,9 @@
       <div id="editor" :editor="editor"></div>
     </div>
 
-    <ButtonPublishPost @click.prevent="getContentText" />
+    <ButtonPublishPost @click.prevent="showPreview" />
+
+    <div ref="preview" class="preview"></div>
 
   </form>
 
@@ -42,27 +44,44 @@ import ButtonPublishPost from "./ButtonPublishPost.vue"
 
 
 const editor = ref()
+let preview = ref()
 
-// List of toolbar see https://quilljs.com/docs/formats/
 const toolbarOptions = [
-  [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
-  ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
 
+  // List of toolbar see https://quilljs.com/docs/formats/
+  // Inline Styles
+  [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+  ['bold', 'italic', 'underline', 'strike'],
+
+  // Paragraph
   [{ 'align': [] }],
   [{ 'list': 'ordered' }, { 'list': 'bullet' }],
-  [{ 'indent': '-1' }, { 'indent': '+1' }],          // outdent/indent
-  [{ 'direction': 'rtl' }],                         // text direction
-  
-  [{ 'script': 'sub' }, { 'script': 'super' }],      // superscript/subscript
+  [{ 'indent': '-1' }, { 'indent': '+1' }],
+  [{ 'direction': 'rtl' }],
+
+  // Text Decoration and Symbols
+  [{ 'script': 'sub' }, { 'script': 'super' }],
   ['blockquote', 'code-block'],
 
-  [{ 'color': [] }, { 'background': [] }],          // dropdown with defaults from theme
+  // Colors
+  [{ 'color': [] }, { 'background': [] }],
 
-  ['link', 'image', 'formula'],                     // embed
+  // Embed
+  ['link', 'image', 'formula'],
 
-  ['clean']                                         // remove formatting button
-];
-let getContentText = () => { console.log(editor.value.getContents()) }
+  // Reset
+  ['clean']
+]
+
+// Editor functions
+// function getContentText() { 
+  // console.log(editor.value.getContents()) 
+// }
+
+function showPreview() {
+  preview.value.innerHTML = editor.value.getText()
+}
+
 
 onMounted(() => {
   let options = {
@@ -77,7 +96,7 @@ onMounted(() => {
 
 
   editor.value = new Quill("#editor", options)
-  // editor.on("text-change", () => { })
+  editor.value.on("text-change", showPreview)
 
 
 })
