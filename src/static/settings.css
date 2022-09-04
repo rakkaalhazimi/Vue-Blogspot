@@ -52,13 +52,11 @@ h3 {
   font-size: clamp(1.17rem, 2vw, 3rem);
 }
 
-h4 {
+h4, p {
   font-size: clamp(1rem, 1.5vw, 2rem);
 }
 
-h1, h2, h3, h4, p {
-  margin: 0 max(2vw, 1rem);
-}
+
 
 a {
   display: inline-block;

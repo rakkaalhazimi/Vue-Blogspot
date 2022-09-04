@@ -8,6 +8,10 @@ header {
     color: var(--text-dark);
 }
 
+header h1, header h2, header h3, header h4, header p {
+    margin: 0 max(2vw, 1rem);
+  }
+
 header img {
     margin: 0 auto;
     width: var(--photo-width);
