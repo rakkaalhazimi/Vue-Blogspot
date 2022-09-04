@@ -1,15 +1,5 @@
 /* Wide Screen: Desktop */
 @media (min-width: 1200px) {
-    /* Section */
-    .content-view {
-        margin: 0 20vw;
-    }
-
-    /* Header */
-    header {
-        height: 30vh;
-    }
-
     /* Blog */
     .blog-card-list {
         grid-template-columns: repeat(3, var(--card-width));
@@ -18,16 +8,6 @@
 
 /* Small Screen: Tablet, Smartphone */
 @media (max-width: 600px) {
-    /* Settings */
-    h1 {
-        font-size: 2.5em;
-    }
-
-    /* Section */
-    .content-view {
-        margin: 0 2vw;
-    }
-
     /* Blog */
     .blog-card-list {
         grid-template-columns: repeat(1, var(--card-width));
