@@ -2,7 +2,8 @@
   <footer>
     <div class="contact-container">
 
-      <h4 class="contact-title">Contact Me</h4>
+      <h3 class="contact-title">Machine Learning Blog</h3>
+      <p class="contact-desc">Blog created as a practice for me to become a fullstack developer.<br>You can connect with me through:</p>
       <ul class="contact-icon-list">
         <li class="contact-icon-item">
           <a href="#">
@@ -33,15 +34,11 @@
 
     </div>
 
-    <div class="made-with-container">
-      <h4 class="made-with-title">Made With</h4>
-      <ul class="made-with-icon-list">
-        <li class="made-with-icon-item">
-          <a href="https://vuejs.org/" target="_blank">
-            <i class="fa-brands fa-vuejs"></i>
-          </a>
-        </li>
-      </ul>
+    <div class="copyright-container">
+      <p class="copyright-desc">
+        Copyright all rights reserved. Made with <a href="https://vuejs.org/" target="_blank">Vue</a>
+      </p>
     </div>
+
   </footer>
 </template>

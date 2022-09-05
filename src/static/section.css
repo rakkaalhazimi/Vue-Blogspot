@@ -52,6 +52,7 @@ footer {
 }
 
 .contact-title,
+.contact-desc,
 .made-with-title {
     margin-bottom: var(--small-space);
 }
