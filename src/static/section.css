@@ -2,13 +2,20 @@
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    column-gap: 10px;
-    padding: var(--medium-padding);
+    justify-content: flex-start;
+    column-gap: var(--medium-space);
+    padding: var(--small-space) 5vw;
     background-color: var(--dominant);
 }
 
-nav a {
+nav>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: var(--small-space);
+}
+
+nav>ul>li>a, nav>h1 {
     width: var(--navbar-link-width);
     height: var(--navbar-link-height);
     line-height: var(--navbar-link-height);
@@ -16,11 +23,11 @@ nav a {
     color: var(--text-dark);
 }
 
-nav a.router-link-exact-active {
+nav ul>li>a.router-link-exact-active {
     color: var(--accent);
 }
 
-nav a:hover {
+nav ul>li>a:hover {
     background-color: var(--complement);
     color: var(--text-light);
     transition: all 0.5s ease;
