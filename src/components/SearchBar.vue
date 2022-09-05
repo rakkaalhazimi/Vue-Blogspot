@@ -1,37 +1,21 @@
 <template>
   <form>
-    <input type="text" placeholder="Enter keywords" v-model="keywords">
-    <SearchBarButton></SearchBarButton>
+    <input 
+      type="text" 
+      placeholder="Enter keywords" 
+      :value="modelValue" 
+      @input="$emit('update:modelValue', $event.target.value)"
+    >
+    <!-- <ButtonSearchBar></ButtonSearchBar> -->
   </form>
   
-  <p>{{ keywords }}</p>
 </template>
 
-<script>
+<script setup>
+import { defineProps, defineEmits } from 'vue';
 
-  import SearchBarButton from './SearchBarButton.vue';
+defineProps(["modelValue"])
+defineEmits(["update:modelValue"])
 
-  export default {
-    name: "SearchBar",
-    components: { 
-      SearchBarButton 
-    },
-
-    data () {
-      return {
-        keywords: ''
-      }
-    }
-  }
+// import ButtonSearchBar from './ButtonSearchBar.vue';
 </script>
-
-<style scoped>
-  input[type='text'] {
-    padding: 5px;
-
-    width: 600px;
-    height: 20px;
-
-    border-radius: 20px 0 0 20px;
-  }
-</style>
