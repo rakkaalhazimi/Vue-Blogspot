@@ -3,14 +3,28 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 40vh;
-    background-color: var(--dominant);
+    padding: var(--medium-padding);
+    height: 50vh;
+    background-color: var(--dominant-shade);
     color: var(--text-dark);
 }
 
-header h1, header h2, header h3, header h4, header p {
-    margin: 0 max(2vw, 1rem);
-  }
+header h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+header h2 {
+    font-size: clamp(1.5rem, 3.5vw, 2rem);
+}
+
+header h3 {
+    font-size: clamp(1.17rem, 2vw, 1.5rem);
+}
+
+header h4,
+header p {
+    font-size: clamp(1rem, 1.5vw, 1.17rem);
+}
 
 header img {
     margin: 0 auto;
