@@ -36,10 +36,6 @@ nav ul>li>a:hover {
 /*  */
 
 /* Content Section */
-.content-view {
-    margin: 0 5vw;
-}
-
 .content-view > * {
     margin-bottom: var(--big-space);
 }
