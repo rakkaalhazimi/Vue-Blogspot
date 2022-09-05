@@ -18,10 +18,10 @@ import "@fortawesome/fontawesome-free/js/fontawesome.js"
 
 // Blog Posts
 let blogPosts = reactive([
-  { id: 1, title: "Blog#1 Title", desc: "Blog Descriptions", tags: "#Tags", content: "Content Blog#1" },
-  { id: 2, title: "Blog#2 Title", desc: "Blog Descriptions", tags: "#Tags", content: "Content Blog#2" },
-  { id: 3, title: "Blog#3 Title", desc: "Blog Descriptions", tags: "#Tags", content: "Content Blog#3" },
-  { id: 4, title: "Blog#4 Title", desc: "Blog Descriptions", tags: "#Tags", content: "Content Blog#4" },
+  { id: 1, title: "Blog#1 Machine Learning", desc: "Blog Descriptions", tags: "#Tags", content: "Content Blog#1" },
+  { id: 2, title: "Blog#2 Deep Learning", desc: "Blog Descriptions", tags: "#Tags", content: "Content Blog#2" },
+  { id: 3, title: "Blog#3 Cross Validation", desc: "Blog Descriptions", tags: "#Tags", content: "Content Blog#3" },
+  { id: 4, title: "Blog#4 Model Evaluation", desc: "Blog Descriptions", tags: "#Tags", content: "Content Blog#4" },
 ])
 
 
