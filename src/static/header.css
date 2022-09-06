@@ -1,10 +1,13 @@
+/* ===========================
+   General Header Style 
+   =========================== */
 header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: var(--medium-padding);
-    height: 50vh;
+    min-height: 50vh;
     background-color: var(--dominant-shade);
     color: var(--text-dark);
 }
