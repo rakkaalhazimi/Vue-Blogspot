@@ -21,14 +21,43 @@ header h3 {
     font-size: clamp(1.17rem, 2vw, 1.5rem);
 }
 
-header h4,
-header p {
+header h4 {
     font-size: clamp(1rem, 1.5vw, 1.17rem);
 }
 
-header img {
+header p {
+    font-size: clamp(1rem, 1vw, 1.05rem);
+}
+
+
+/* ===========================
+   About Header Style 
+   =========================== */
+.header-about {
+    height: 90vh;
+}
+
+
+.header-about img {
     margin: 0 auto;
     width: var(--photo-width);
     height: var(--photo-height);
     border-radius: 100px;
+}
+
+
+.header-about .about-name,
+.header-about .about-title {
+    letter-spacing: 1px;
+}
+
+.header-about .about-title {
+    margin-bottom: var(--medium-space);
+    color: var(--accent);
+}
+
+.header-about .about-desc {
+    padding: 0 10vw;
+    letter-spacing: 0.9px;
+    line-height: 20px;
 }
