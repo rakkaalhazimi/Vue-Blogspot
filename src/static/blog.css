@@ -51,10 +51,11 @@
 
 
 /* BlogEditor */
-.post-form {
-    display: flex;
-    flex-direction: column;
+#post-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: var(--gap);
+    padding: 0 5vw;
 }
 
 .post-form-item {
@@ -64,8 +65,17 @@
     text-align: left;
 }
 
+.post-form-label {
+    margin-bottom: var(--small-space);
+    color: var(--text-dark);
+}
+
 .post-form-item input {
-    padding: var(--small-padding);
+    padding: var(--medium-padding);
+}
+
+#editor-item {
+    grid-column: 1 / span 2;
 }
 
 #editor,

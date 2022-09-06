@@ -1,27 +1,27 @@
 <template>
   <form id="post-form">
     <div class="post-form-item">
-      <p>Title</p>
+      <p class="post-form-label">Title</p>
       <input id="post-title" type="text" placeholder="Enter title" />
     </div>
 
     <div class="post-form-item">
-      <p>Descriptions</p>
+      <p class="post-form-label">Descriptions</p>
       <input id="post-desc" type="text" placeholder="Enter description" />
     </div>
 
     <div class="post-form-item">
-      <p>Tag</p>
+      <p class="post-form-label">Tag</p>
       <input id="post-tag" type="text" />
     </div>
 
     <div class="post-form-item">
-      <p>Date</p>
+      <p class="post-form-label">Date</p>
       <input id="post-date" type="date" />
     </div>
 
-    <div class="post-form-item">
-      <p>Post</p>
+    <div id="editor-item" class="post-form-item">
+      <p class="post-form-label">Post</p>
       <div id="editor" :editor="editor"></div>
     </div>
 

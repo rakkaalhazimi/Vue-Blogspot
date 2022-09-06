@@ -8,7 +8,10 @@
 
 .post-publish-btn {
     padding: var(--medium-padding);
+    width: 200px;
+    height: 40px;
     background-color: var(--complement);
     color: var(--text-light);
+    text-align: center;
     cursor: pointer;
 }
