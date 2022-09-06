@@ -1,4 +1,6 @@
-/* Wide Screen: Desktop */
+/* ================================
+   Wide Screen: Desktop
+   ================================ */
 @media (min-width: 1200px) {
     /* Blog */
     .blog-card-list {
