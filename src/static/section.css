@@ -22,12 +22,17 @@ nav {
 }
 
 .nav-logo,
-.nav-link-item a {
-    width: var(--navbar-link-width);
+.nav-link-item a,
+.nav-menu-bars,
+.nav-close-btn {
     height: var(--navbar-link-height);
     line-height: var(--navbar-link-height);
     letter-spacing: 1px;
     color: var(--text-dark);
+}
+
+.nav-link-item a {
+    width: var(--navbar-link-width);
 }
 
 .nav-link-item a.router-link-exact-active {
@@ -38,6 +43,14 @@ nav {
     background-color: var(--complement);
     color: var(--text-light);
     transition: all 0.5s ease;
+}
+
+.nav-menu-bars,
+.nav-close-btn {
+    display: none;
+    font-size: 1.4em;
+    background: none;
+    cursor: pointer;
 }
 
 

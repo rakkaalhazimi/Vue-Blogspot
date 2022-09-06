@@ -6,8 +6,50 @@
     }
 }
 
-/* Small Screen: Tablet, Smartphone */
+/* ================================
+   Small Screen: Tablet, Smartphone 
+   ================================ */
 @media (max-width: 600px) {
+    /* Navbar */
+    nav {
+        justify-content: space-between;
+    }
+
+    .nav-link-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        right: -90vw;
+
+        /* horizontal padding is the same as nav */
+        padding: var(--small-space) 0;
+
+        height: 100vh;
+
+        background-color: var(--dominant);
+        transition: all 0.5s ease;
+    }
+
+    .nav-link-item a {
+        width: 90vw;
+    }
+
+    .nav-link-item a:hover {
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu-bars,
+    .nav-close-btn {
+        display: block;
+    }
+
+    .nav-close-btn {
+        margin-left: 90%;
+    }
+
     /* Blog */
     .blog-card-list {
         grid-template-columns: repeat(1, var(--card-width));
