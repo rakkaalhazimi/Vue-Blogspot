@@ -4,9 +4,12 @@
 
 /* Content */
 @import "./section.css";
+
+/* Components */
 @import "./header.css";
 @import "./blog.css";
 @import "./button.css";
+@import "./search.css";
 
 /* Responsive */
 @import "./responsive.css";
