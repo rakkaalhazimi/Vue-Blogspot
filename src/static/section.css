@@ -1,4 +1,6 @@
-/* Navigation Section */
+/* ===========================
+   Navigation Section 
+   =========================== */
 nav {
     display: flex;
     flex-direction: row;
@@ -8,17 +10,19 @@ nav {
     top: 0;
     padding: var(--small-space) 5vw;
     width: 100%;
-    background-color: var(--dominant);
+    background-color: var(--dominant-transparent);
+    backdrop-filter: blur(3px);
 }
 
-nav>ul {
+.nav-link-container {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     column-gap: var(--small-space);
 }
 
-nav>ul>li>a, nav>h1 {
+.nav-logo,
+.nav-link-item a {
     width: var(--navbar-link-width);
     height: var(--navbar-link-height);
     line-height: var(--navbar-link-height);
@@ -26,26 +30,28 @@ nav>ul>li>a, nav>h1 {
     color: var(--text-dark);
 }
 
-nav ul>li>a.router-link-exact-active {
+.nav-link-item a.router-link-exact-active {
     color: var(--accent);
 }
 
-nav ul>li>a:hover {
+.nav-link-item a:hover {
     background-color: var(--complement);
     color: var(--text-light);
     transition: all 0.5s ease;
 }
 
-/*  */
 
-/* Content Section */
-.content-view > * {
+/* ===========================
+   Content Section 
+   =========================== */
+.content-view>* {
     margin-bottom: var(--big-space);
 }
 
-/*  */
 
-/* Footer Section */
+/* ===========================
+   Footer Section 
+   =========================== */
 footer {
     margin-top: auto;
     padding: var(--big-padding);
@@ -82,5 +88,3 @@ footer {
     color: var(--accent);
     transition: all 0.5 ease;
 }
-
-/*  */
