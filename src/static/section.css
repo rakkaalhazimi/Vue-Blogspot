@@ -58,7 +58,7 @@ nav {
    Content Section 
    =========================== */
 .content-view>* {
-    margin-bottom: var(--big-space);
+    margin-bottom: max(var(--big-space), 10vh);
 }
 
 
