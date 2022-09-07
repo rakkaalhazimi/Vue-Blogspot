@@ -2,7 +2,7 @@
   <header class="header-about">
     <img class="about-photo" src="../assets/photo.jpg" />
     <h2 class="about-name">Rakka Alhazimi</h2>
-    <p class="about-title">Data Science, Web Developer</p>
+    <p class="about-title">Data Scientist, Web Developer</p>
     <p class="about-desc">
       Proficient Python Programmer with 3 years learning experience.
       Machine Learning Lecturer from one of the Educational Technology startups.
