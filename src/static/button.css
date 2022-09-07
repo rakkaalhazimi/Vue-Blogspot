@@ -1,5 +1,7 @@
 .add-blog-btn {
     padding: var(--medium-padding);
+    width: 200px;
+    height: 40px;
     background-color: var(--complement);
     color: var(--text-light);
     font-weight: bold;
