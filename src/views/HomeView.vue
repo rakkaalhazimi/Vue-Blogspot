@@ -1,9 +1,9 @@
 <template>
   <div id="home" class="content-view">
     <HeaderHome/>
-    <SearchBar v-model="keywords" />
+    <SearchBar />
     <ButtonAddPost v-if="isLogin"/>
-    <BlogCardList  :keywords="keywords" />
+    <BlogCardList />
   </div>
 </template>
 
@@ -14,7 +14,6 @@ import BlogCardList from '@/components/BlogCardList.vue';
 import ButtonAddPost from '@/components/ButtonAddPost.vue';
 import SearchBar from '@/components/SearchBar.vue';
 
-let keywords = ref("")
 let isLogin = ref(false)
 
 </script>

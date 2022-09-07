@@ -3,8 +3,7 @@
     <input
       type="text" 
       placeholder="Search Post" 
-      :value="modelValue" 
-      @input="$emit('update:modelValue', $event.target.value)"
+      v-model="store.keywords" 
     >
     <button type="submit">
       <i class="fa-solid fa-magnifying-glass"></i>
@@ -14,8 +13,7 @@
 </template>
 
 <script setup>
-import { defineProps, defineEmits } from 'vue';
+import { useSearchStore } from "../stores/search";
 
-defineProps(["modelValue"])
-defineEmits(["update:modelValue"])
+const store = useSearchStore()
 </script>
