@@ -16,16 +16,13 @@ function postStore() {
   const keywords = ref("")
 
   // Actions
-  function getPostFromId(id, posts) {
-    for (let post of posts) {
-      if (post.id == id) { return post }
-    }
-    return null
+  function getPostFromId(id) {
+    return posts.find((post) => post.id == id )
   }
 
   // Getters
   function filterPosts() {
-      return posts.filter((post) => { return post.title.toLowerCase().includes(keywords.value.toLowerCase()) })
+      return posts.filter((post) => post.title.toLowerCase().includes(keywords.value.toLowerCase()) )
   }
   const filteredPosts = computed(filterPosts)
 
