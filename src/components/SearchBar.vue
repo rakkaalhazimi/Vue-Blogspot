@@ -3,7 +3,7 @@
     <input
       type="text" 
       placeholder="Search Post" 
-      v-model="store.keywords" 
+      v-model="postStore.keywords" 
     >
     <button type="submit">
       <i class="fa-solid fa-magnifying-glass"></i>
@@ -13,7 +13,7 @@
 </template>
 
 <script setup>
-import { useSearchStore } from "../stores/search";
+import { usePostStore } from "../stores/post";
 
-const store = useSearchStore()
+const postStore = usePostStore()
 </script>
