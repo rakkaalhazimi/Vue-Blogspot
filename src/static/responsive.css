@@ -45,6 +45,15 @@
         grid-template-columns: repeat(1, var(--card-width));
     }
 
+    #post-form {
+        /* Make sure no column with more than 1 span */
+        grid-template-columns: 1fr;
+    }
+
+    #editor-item {
+        grid-column: 1;
+    }
+
 }
 
 
@@ -61,7 +70,7 @@
 /* ================================
    Wide Screen: Desktop
    ================================ */
-   @media (min-width: 1200px) {
+@media (min-width: 1200px) {
     /* Header */
     .about-desc {
         padding: 0 20vw;
