@@ -21,14 +21,12 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        visibility: hidden;
         position: absolute;
         top: 0;
         right: -90vw;
 
         /* horizontal padding is the same as nav */
         padding: var(--small-space) 0;
-
         height: 100vh;
 
         background-color: var(--dominant);

@@ -18,13 +18,11 @@
 <script setup>
   function showNavbar() {
     let nav = document.getElementsByClassName("nav-link-container")[0]
-    nav.style.visibility = "visible"
     nav.style.right = 0
   }
 
   function hideNavbar() {
     let nav = document.getElementsByClassName("nav-link-container")[0]
-    nav.style.visibility = "hidden"
     nav.style.right = "-90vw"
   }
 
