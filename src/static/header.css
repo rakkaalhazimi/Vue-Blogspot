@@ -13,7 +13,7 @@ header {
 }
 
 header h1 {
-    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-size: clamp(1.5rem, 5vw, 3.5rem);
 }
 
 header h2 {
@@ -41,7 +41,7 @@ header p {
 }
 
 
-.header-about img {
+.about-photo {
     margin: 0 auto;
     width: var(--photo-width);
     height: var(--photo-height);
@@ -49,17 +49,17 @@ header p {
 }
 
 
-.header-about .about-name,
-.header-about .about-title {
+.about-name,
+.about-title {
     letter-spacing: 1px;
 }
 
-.header-about .about-title {
+.about-title {
     margin-bottom: var(--medium-space);
     color: var(--accent);
 }
 
-.header-about .about-desc {
+.about-desc {
     padding: 0 10vw;
     letter-spacing: 0.9px;
     line-height: 20px;

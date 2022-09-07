@@ -1,6 +1,6 @@
 <template>
   <header class="header-about">
-    <img src="../assets/photo.jpg" />
+    <img class="about-photo" src="../assets/photo.jpg" />
     <h2 class="about-name">Rakka Alhazimi</h2>
     <p class="about-title">Data Science, Web Developer</p>
     <p class="about-desc">
