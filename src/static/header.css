@@ -13,7 +13,7 @@ header {
 }
 
 header h1 {
-    font-size: clamp(1.5rem, 5vw, 3.5rem);
+    font-size: clamp(1.2rem, 5vw, 3.5rem);
 }
 
 header h2 {
@@ -29,7 +29,7 @@ header h4 {
 }
 
 header p {
-    font-size: clamp(1rem, 1vw, 1.05rem);
+    font-size: clamp(0.8rem, 1.2vw, 1.1rem);
 }
 
 
@@ -55,12 +55,12 @@ header p {
 }
 
 .about-title {
-    margin-bottom: var(--medium-space);
+    margin-bottom: var(--big-space);
     color: var(--accent);
 }
 
 .about-desc {
-    padding: 0 10vw;
+    
     letter-spacing: 0.9px;
     line-height: 20px;
 }
