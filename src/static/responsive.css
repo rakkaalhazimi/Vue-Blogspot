@@ -1,17 +1,7 @@
 /* ================================
-   Wide Screen: Desktop
+   Small Screen: Smartphone 
    ================================ */
-@media (min-width: 1200px) {
-    /* Blog */
-    .blog-card-list {
-        grid-template-columns: repeat(3, var(--card-width));
-    }
-}
-
-/* ================================
-   Small Screen: Tablet, Smartphone 
-   ================================ */
-@media (max-width: 600px) {
+   @media (max-width: 600px) {
     /* Navbar */
     nav {
         justify-content: space-between;
@@ -56,3 +46,31 @@
     }
 
 }
+
+
+/* ================================
+   Medium Screen: Tablet 
+   ================================ */
+@media (min-width: 768px) {
+    /* Header */
+    .about-desc {
+        padding: 0 10vw;
+    }
+}
+
+/* ================================
+   Wide Screen: Desktop
+   ================================ */
+   @media (min-width: 1200px) {
+    /* Header */
+    .about-desc {
+        padding: 0 20vw;
+    }
+
+    /* Blog */
+    .blog-card-list {
+        grid-template-columns: repeat(3, var(--card-width));
+    }
+}
+
+
