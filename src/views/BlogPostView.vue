@@ -8,18 +8,15 @@
 </template>
 
 <script setup>
-  import { inject } from "vue";
   import { useRoute } from "vue-router";
+  import { usePostStore } from "../stores/post";
   import BlogPost from "@/components/BlogPost.vue";
 
-  // Use router
-  const route = useRoute()
 
-  // Get parent's node provided variables
-  let blogPosts = inject('blogPosts')
-  let getPostFromId = inject('getPostFromId')
+  const route = useRoute()
+  const { getPostFromId } = usePostStore()
 
   // Get blog post based on Id
   // let post = getPostFromId($route.params.id, blogPosts)
-  let post = getPostFromId(route.params.id, blogPosts)
+  let post = getPostFromId(route.params.id)
 </script>
