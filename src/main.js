@@ -1,11 +1,13 @@
 import { createApp } from 'vue'
+import { createPinia } from 'pinia'
 import App from './App.vue'
 import router from './router'
 
-let app = createApp(App).use(router)
+// Setup vue app and its plugins
+const pinia = createPinia()
+const app = createApp(App).use(router).use(pinia)
 app.mount('#app')
 
-// Register font awesome components
 
 // Add window global
 app.config.globalProperties.window = window
