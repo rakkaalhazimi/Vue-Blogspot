@@ -11,10 +11,7 @@ import { ref, reactive, provide } from "vue"
 import SectionNavigation from "./components/SectionNavigation.vue"
 import SectionFooter from "./components/SectionFooter.vue"
 import SectionContent from "./components/SectionContent.vue"
-import "@fortawesome/fontawesome-free/js/brands.js"
-import "@fortawesome/fontawesome-free/js/regular.js"
-import "@fortawesome/fontawesome-free/js/solid.js"
-import "@fortawesome/fontawesome-free/js/fontawesome.js"
+
 
 
 // Blog Posts
