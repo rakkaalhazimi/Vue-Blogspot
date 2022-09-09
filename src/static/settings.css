@@ -1,4 +1,5 @@
 :root {
+  /* Color */
   --dominant: #222831;
   --dominant-shade: #13171D;
   --dominant-transparent: rgba(34, 40, 49, 0.8);
@@ -7,17 +8,23 @@
   --text-dark: #f0eeee;
   --text-light: #181818;
 
+  /* Margin */
   --text-margin: 20px;
-  --side-margin: 5vw;
-
+  --vw-margin: 5vw;
+  
   --small-space: 10px;
   --medium-space: 20px;
   --big-space: 30px;
 
+  /* Padding */
   --small-padding: 5px;
   --medium-padding: 10px;
   --big-padding: 15px;
 
+  --button-padding: 15px;
+  --input-padding: 15px;
+
+  /* Size */
   --navbar-link-height: 50px;
   --navbar-link-width: 120px;
 

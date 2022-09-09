@@ -39,7 +39,7 @@
 
 /* BlogPost */
 .blog-post {
-    margin: var(--side-margin) var(--side-margin);
+    margin: var(--vw-margin) var(--vw-margin);
     color: var(--text-dark);
 }
 
