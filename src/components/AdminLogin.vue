@@ -18,7 +18,7 @@
       </div>
     </div>
 
-    <button class="admin-login-btn">Login</button>
+    <button class="btn">Login</button>
   </div>
 
   <div id="admin-overlay"></div>

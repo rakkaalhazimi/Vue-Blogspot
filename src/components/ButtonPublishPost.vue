@@ -1,3 +1,3 @@
 <template>
-  <button class="post-publish-btn">Publish</button>
+  <button class="btn">Publish</button>
 </template>
