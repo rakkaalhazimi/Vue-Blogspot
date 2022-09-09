@@ -17,5 +17,5 @@
 #search-bar button {
     font-size: var(--icon-size);
     background: transparent;
-    cursor: pointer;
+    
 }

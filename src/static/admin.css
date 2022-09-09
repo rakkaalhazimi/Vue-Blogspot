@@ -46,7 +46,7 @@
     background: transparent;
     color: var(--text-dark);
     font-size: 1.2em;
-    cursor: pointer;
+    
 }
 
 .admin-login-btn {
@@ -56,7 +56,7 @@
     color: var(--text-light);
     font-weight: bold;
     transition: all 0.5s ease;
-    cursor: pointer;
+    
 
 }
 
