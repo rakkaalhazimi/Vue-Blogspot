@@ -25,7 +25,7 @@
       <div id="editor" :editor="editor"></div>
     </div>
 
-    <ButtonPublishPost @click.prevent="showPreview" />
+    <button class="btn" @click.prevent="showPreview">Publish</button>
 
     <div ref="preview" class="preview"></div>
 
@@ -40,7 +40,6 @@ import Quill from "quill"
 import "quill/dist/quill.core.css"
 import "quill/dist/quill.snow.css"
 import "quill/dist/quill.bubble.css"
-import ButtonPublishPost from "./ButtonPublishPost.vue"
 
 
 const editor = ref()
