@@ -1,6 +1,6 @@
 <template>
   <div class="blog-card">
-    <router-link :to="'/post/' + this.$.vnode.key">
+    <router-link :to="'/post/' + id">
       <img src="../assets/logo.png" alt="Blog picture" />
     </router-link>
     <h3>{{  post.title  }}</h3>
@@ -13,5 +13,8 @@
 <script setup>
 import { defineProps } from 'vue';
 
-defineProps({post: Object,})
+defineProps({
+  post: Object,
+  id: Number
+})
 </script>

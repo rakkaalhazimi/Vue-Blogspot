@@ -4,7 +4,8 @@
     <BlogCard 
       v-for="blogPost in filteredPosts"
       :key="blogPost.id" 
-      :post="blogPost" 
+      :id="blogPost.id"
+      :post="blogPost"
       />
   </div>
 </template>
