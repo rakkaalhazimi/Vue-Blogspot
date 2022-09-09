@@ -1,0 +1,73 @@
+#admin-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--small-space);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    padding: max(4vw, 40px) max(3vw, 30px);
+    min-width: 300px;
+    min-height: 400px;
+    background-color: var(--dominant);
+    color: var(--text-dark);
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px var(--dominant-shade);
+    text-align: left;
+}
+
+.admin-form-title {
+    margin-bottom: var(--small-space);
+}
+
+.admin-form-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--small-space);
+    margin-bottom: var(--small-space);
+    text-align: left;
+}
+
+.admin-form-bg {
+    padding: var(--medium-padding);
+    background-color: var(--complement);
+}
+
+.admin-form-bg input {
+    width: 100%;
+    background-color: var(--complement);
+}
+
+.admin-close-btn {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background: transparent;
+    color: var(--text-dark);
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.admin-login-btn {
+    margin-top: auto;
+    padding: var(--medium-padding);
+    background-color: var(--accent);
+    color: var(--text-light);
+    font-weight: bold;
+    transition: all 0.5s ease;
+    cursor: pointer;
+
+}
+
+.admin-login-btn:hover {
+    color: var(--text-dark);
+}
+
+#admin-overlay {
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);    
+}
