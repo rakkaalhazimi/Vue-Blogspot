@@ -1,8 +1,10 @@
 /* Settings */
 @import "./settings.css";
 
+/* Admin */
+@import "./admin.css";
 
-/* Content */
+/* Sections (Navbar, Content and Footer) */
 @import "./section.css";
 
 /* Components */

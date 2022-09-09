@@ -1,4 +1,6 @@
 <template>
+  <AdminLogin />
+
   <SectionNavigation />
 
   <SectionContent />
@@ -7,6 +9,7 @@
 </template>
 
 <script setup>
+import AdminLogin from "./components/AdminLogin.vue"
 import SectionNavigation from "./components/SectionNavigation.vue"
 import SectionFooter from "./components/SectionFooter.vue"
 import SectionContent from "./components/SectionContent.vue"
