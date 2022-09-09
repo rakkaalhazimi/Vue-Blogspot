@@ -1,5 +1,5 @@
 <template>
-  <form id="search-bar">
+  <div id="search-bar">
     <input
       type="text" 
       placeholder="Search Post" 
@@ -8,7 +8,7 @@
     <button type="submit">
       <i class="fa-solid fa-magnifying-glass"></i>
     </button>
-  </form>
+  </div>
   
 </template>
 
