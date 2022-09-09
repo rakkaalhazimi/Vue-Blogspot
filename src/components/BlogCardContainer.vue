@@ -1,6 +1,6 @@
 <template>
   <p>{{ keywords }}</p>
-  <div class="blog-card-list">
+  <div class="blog-card-container">
     <BlogCard 
       v-for="blogPost in filteredPosts"
       :key="blogPost.id" 

@@ -1,5 +1,5 @@
-/* BlogCardList */
-.blog-card-list {
+/* BlogCardContainer */
+.blog-card-container {
     display: grid;
     grid-template-columns: repeat(2, var(--card-width));
     justify-content: center;
@@ -7,7 +7,6 @@
     row-gap: var(--medium-space);
 }
 
-/*  */
 
 /* BlogCard */
 .blog-card {
