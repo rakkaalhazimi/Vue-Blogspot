@@ -1,7 +1,7 @@
 <template>
   <div class="blog-card">
-    <router-link :to="'/post/' + id">
-      <img src="../assets/logo.png" alt="Blog picture" />
+    <router-link :to="'/post/' + id" class="blog-card-link">
+      <img class="blog-card-image" src="../assets/logo.png" alt="Blog picture" />
     </router-link>
     <h3>{{  post.title  }}</h3>
     <p>{{  post.desc  }}</p>
