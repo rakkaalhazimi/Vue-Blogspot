@@ -38,6 +38,9 @@
   --admin-form-min-height: 400px;
 
   --icon-size: 1.2em;
+
+  /* Transition */
+  --default-transition: all 0.5s ease;
 }
 
 * {

@@ -20,7 +20,7 @@
     /* box-shadow: 0px 2px 5px 1px var(--accent); */
     background-color: var(--complement);
     color: var(--text-light);
-    transition: all 0.5s ease;
+    transition: var(--default-transition);
 }
 
 .blog-card-link {

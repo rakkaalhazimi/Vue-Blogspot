@@ -20,7 +20,7 @@
         height: 100vh;
 
         background-color: var(--dominant);
-        transition: all 0.5s ease;
+        transition: var(--default-transition);
     }
 
     .nav-link-item a {
@@ -28,7 +28,7 @@
     }
 
     .nav-link-item a:hover {
-        transition: all 0.5s ease;
+        transition: var(--default-transition);
     }
 
     .nav-menu-bars,
