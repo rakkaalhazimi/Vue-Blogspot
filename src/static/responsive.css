@@ -8,17 +8,22 @@
     }
 
     .nav-link-container {
+        /* Display */
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+
+        /* Position */
         position: absolute;
         top: 0;
         right: -90vw;
 
+        /* Sizing */
         /* horizontal padding is the same as nav */
         padding: var(--small-space) 0;
         height: 100vh;
 
+        /* Color */
         background-color: var(--dominant);
         transition: var(--default-transition);
     }
