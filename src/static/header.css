@@ -37,6 +37,7 @@ header p {
    About Header Style 
    =========================== */
 .header-about {
+    margin-bottom: 0;
     height: 90vh;
 }
 
