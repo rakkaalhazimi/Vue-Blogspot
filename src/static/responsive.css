@@ -77,7 +77,7 @@
     }
 
     /* Blog */
-    .blog-card-list {
+    .blog-card-container {
         grid-template-columns: repeat(3, var(--card-width));
     }
 }
