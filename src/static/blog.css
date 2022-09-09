@@ -3,8 +3,8 @@
     display: grid;
     grid-template-columns: repeat(2, var(--card-width));
     justify-content: center;
-    column-gap: var(--gap);
-    row-gap: var(--gap);
+    column-gap: var(--medium-space);
+    row-gap: var(--medium-space);
 }
 
 /*  */
@@ -54,7 +54,7 @@
 #post-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--gap);
+    gap: var(--medium-space);
     padding: 0 5vw;
 }
 
