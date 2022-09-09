@@ -9,7 +9,7 @@
 }
 
 .post-publish-btn {
-    padding: var(--medium-padding);
+    padding: var(--button-padding);
     width: 200px;
     height: 40px;
     background-color: var(--complement);
