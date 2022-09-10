@@ -26,7 +26,10 @@
 
 <script setup>
 import { onMounted } from "vue"
+import { useUserStore } from "../stores/user"
 
+
+const { userLogin } = useUserStore()
 
 let adminLogin, adminOverlay, username, password
 
@@ -43,12 +46,14 @@ function hideAdminLogin() {
 }
 
 function login() {
-  adminLogin.reset()
-  if (username == "rakka" && password == "rakka") {
+  if (username.value == "rakka" && password.value == "rakka") {
     alert("login berhasil")
     hideAdminLogin()
-
+    userLogin()
+    
   } else alert("login gagal")
+
+  adminLogin.reset()
 }
 </script>
 

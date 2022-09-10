@@ -14,7 +14,12 @@
       <li class="nav-link-item">
         <router-link to="/projects" class="nav-link">Projects</router-link>
       </li>
-      <li class="nav-link-item"><button @click="showAdminLogin" class="nav-link login-btn">Login</button></li>
+      <li class="nav-link-item" v-if="!isLogin">
+        <button @click="showAdminLogin" class="nav-link">Login</button>
+      </li>
+      <li class="nav-link-item" v-if="isLogin">
+        <button @click="userLogout" class="nav-link">Logout</button>
+      </li>
     </ul>
     <button class="nav-menu-bars" @click="showNavbar">
       <i class="fa-solid fa-bars"></i>
@@ -24,6 +29,12 @@
 
 <script setup>
 import { onMounted } from 'vue';
+import { storeToRefs } from "pinia";
+import { useUserStore } from "../stores/user"
+
+
+const { isLogin } = storeToRefs(useUserStore())
+const { userLogout } = useUserStore()
 
 let nav, admin, adminOverlay
 
