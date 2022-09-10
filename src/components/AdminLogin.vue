@@ -60,15 +60,4 @@ function login() {
 #admin-form {
   display: none;
 }
-
-.admin-login-btn {
-  margin-top: auto;
-  padding: var(--button-padding);
-  background-color: var(--accent);
-  color: var(--text-light);
-  font-weight: bold;
-  transition: var(--default-transition);
-
-
-}
 </style>
