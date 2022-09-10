@@ -1,5 +1,5 @@
 <template>
-  <form id="admin-form" class="floating-center glow">
+  <form id="admin-form" class="form-card floating-center glow">
 
     <button class="admin-close-btn" @click.prevent="hideAdminLogin">
       <i class="fa-solid fa-xmark"></i>
@@ -58,17 +58,7 @@ function login() {
 
 <style>
 #admin-form {
-  /* Display */
   display: none;
-  flex-direction: column;
-  gap: var(--small-space);
-
-  /* Sizing */
-  padding: max(4vw, 40px) max(3vw, 30px);
-  min-width: var(--admin-form-min-width);
-  min-height: var(--admin-form-min-height);
-
-  text-align: left;
 }
 
 .admin-form-bg {

@@ -187,6 +187,19 @@ header p {
   margin-bottom: var(--small-space);
 }
 
+/* Card */
+.form-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--small-space);
+
+  padding: max(4vw, 40px) max(3vw, 30px);
+  width: max(20vw, 300px);
+  height: auto;
+
+  text-align: left;
+}
+
 /* Position */
 .floating-center {
   position: fixed;
