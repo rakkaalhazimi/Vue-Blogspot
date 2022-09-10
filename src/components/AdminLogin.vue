@@ -6,18 +6,15 @@
     </button>
 
     <h2 class="title">LOGIN</h2>
+    
     <div class="form-item">
       <label for="admin-username">Username</label>
-      <div class="admin-form-bg">
-        <input id="admin-username" type="text" placeholder="username">
-      </div>
+      <input id="admin-username" class="input-text" type="text" placeholder="username">
     </div>
 
     <div class="form-item">
       <label for="admin-password">Password</label>
-      <div class="admin-form-bg">
-        <input id="admin-password" type="password" placeholder="password">
-      </div>
+      <input id="admin-password" class="input-text" type="password" placeholder="password">
     </div>
 
     <button class="btn" @click.prevent="login">Login</button>

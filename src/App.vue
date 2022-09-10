@@ -207,8 +207,12 @@ header p {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* Size */
-
+/* Input */
+.input-text {
+  padding: .8em;
+  background-color: var(--text-dark);
+  color: var(--text-light);
+}
 
 
 /* Typography */
