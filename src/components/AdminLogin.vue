@@ -1,17 +1,19 @@
 <template>
   <form id="admin-form" class="floating-box glow">
 
-    <button class="admin-close-btn" @click.prevent="hideAdminLogin"><i class="fa-solid fa-xmark"></i></button>
+    <button class="admin-close-btn" @click.prevent="hideAdminLogin">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
 
     <h2 class="admin-form-title">LOGIN</h2>
-    <div class="admin-form-item">
+    <div class="form-item">
       <label for="admin-username">Username</label>
       <div class="admin-form-bg">
         <input id="admin-username" type="text" placeholder="username">
       </div>
     </div>
 
-    <div class="admin-form-item">
+    <div class="form-item">
       <label for="admin-password">Password</label>
       <div class="admin-form-bg">
         <input id="admin-password" type="password" placeholder="password">
@@ -74,14 +76,6 @@ function login() {
 
 .admin-form-title {
   margin-bottom: var(--small-space);
-}
-
-.admin-form-item {
-  display: flex;
-  flex-direction: column;
-  gap: var(--small-space);
-  margin-bottom: var(--small-space);
-  text-align: left;
 }
 
 .admin-form-bg {

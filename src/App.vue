@@ -179,6 +179,14 @@ header p {
   transition: 0s;
 }
 
+/* List */
+.form-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--small-space);
+  margin-bottom: var(--small-space);
+}
+
 /* Box */
 .floating-box {
   position: fixed;
@@ -198,6 +206,9 @@ header p {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.4);
 }
+
+/* Size */
+
 
 
 /* Effect */
