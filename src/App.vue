@@ -223,6 +223,7 @@ header p {
 /* Input */
 .input-text {
   padding: .8em;
+  width: 100%;
   background-color: var(--text-dark);
   color: var(--text-light);
 }

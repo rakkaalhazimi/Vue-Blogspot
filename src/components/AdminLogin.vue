@@ -61,16 +61,6 @@ function login() {
   display: none;
 }
 
-.admin-form-bg {
-  padding: var(--medium-padding);
-  background-color: var(--complement);
-}
-
-.admin-form-bg input {
-  width: 100%;
-  background-color: var(--complement);
-}
-
 .admin-close-btn {
   position: absolute;
   top: 5%;
@@ -90,9 +80,5 @@ function login() {
   transition: var(--default-transition);
 
 
-}
-
-.admin-login-btn:hover {
-  color: var(--text-dark);
 }
 </style>
