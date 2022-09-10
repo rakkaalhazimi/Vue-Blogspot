@@ -1,6 +1,6 @@
 <template>
   <div class="blog-post">
-    <h2 class="blog-title">{{  title  }}</h2>
+    <h2 class="blog-title">{{ title }}</h2>
     <p class="blog-content" v-html="content"></p>
   </div>
 </template>
@@ -13,3 +13,14 @@ defineProps({
   content: String,
 })
 </script>
+
+<style>
+.blog-post {
+  margin: var(--vw-margin) var(--vw-margin);
+  color: var(--text-dark);
+}
+
+.blog-title {
+  margin-bottom: var(--text-margin);
+}
+</style>

@@ -3,7 +3,8 @@
     <div class="contact-container">
 
       <h3 class="contact-title">Machine Learning Blog</h3>
-      <p class="contact-desc">Blog created as a practice for me to become a fullstack developer.<br>You can connect with me through:</p>
+      <p class="contact-desc">Blog created as a practice for me to become a fullstack developer.<br>You can connect with
+        me through:</p>
       <ul class="contact-icon-list">
         <li class="contact-icon-item">
           <a href="#">
@@ -42,3 +43,43 @@
 
   </footer>
 </template>
+
+
+<style>
+footer {
+  margin-top: auto;
+  padding: var(--big-padding);
+  background-color: var(--text-dark);
+  color: var(--text-light);
+}
+
+.contact-container {
+  margin-bottom: var(--medium-space);
+}
+
+.contact-title,
+.contact-desc,
+.made-with-title {
+  margin-bottom: var(--small-space);
+}
+
+.contact-icon-list,
+.made-with-icon-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: var(--medium-space);
+}
+
+.contact-icon-item>a,
+.made-with-icon-item>a {
+  color: var(--text-light);
+  font-size: var(--icon-size);
+}
+
+.contact-icon-item>a:hover,
+.made-with-icon-item>a:hover {
+  color: var(--accent);
+  transition: all 0.5 ease;
+}
+</style>

@@ -74,7 +74,7 @@ const toolbarOptions = [
 
 // Editor functions
 // function getContentText() { 
-  // console.log(editor.value.getContents()) 
+// console.log(editor.value.getContents()) 
 // }
 
 function showPreview() {
@@ -102,3 +102,49 @@ onMounted(() => {
 
 
 </script>
+
+<style>
+#post-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--medium-space);
+  padding: 0 5vw;
+}
+
+.post-form-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--medium-space);
+  text-align: left;
+}
+
+.post-form-label {
+  margin-bottom: var(--small-space);
+  color: var(--text-dark);
+}
+
+.post-form-item input {
+  padding: var(--medium-padding);
+}
+
+#editor-item {
+  grid-column: 1 / span 2;
+}
+
+#editor,
+.ql-toolbar {
+  background-color: var(--text-dark);
+  color: var(--text-light);
+}
+
+@media (max-width: 600px) {
+  #post-form {
+    /* Make sure no column with more than 1 span */
+    grid-template-columns: 1fr;
+  }
+
+  #editor-item {
+    grid-column: 1;
+  }
+}
+</style>

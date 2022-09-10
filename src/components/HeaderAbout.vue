@@ -11,3 +11,47 @@
     </p>
   </header>
 </template>
+
+<style>
+.header-about {
+  margin-bottom: 0;
+  height: 90vh;
+}
+
+
+.about-photo {
+  margin: 0 auto;
+  width: var(--photo-width);
+  height: var(--photo-height);
+  border-radius: 100px;
+}
+
+
+.about-name,
+.about-title {
+  letter-spacing: 1px;
+}
+
+.about-title {
+  margin-bottom: var(--big-space);
+  color: var(--accent);
+}
+
+.about-desc {
+  letter-spacing: 0.9px;
+  line-height: 20px;
+}
+
+@media (min-width: 768px) {
+  .about-desc {
+    padding: 0 10vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-desc {
+    padding: 0 20vw;
+  }
+
+}
+</style>
