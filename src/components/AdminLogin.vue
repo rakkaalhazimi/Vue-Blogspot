@@ -1,5 +1,5 @@
 <template>
-  <form id="admin-form">
+  <form id="admin-form" class="floating-box glow">
 
     <button class="admin-close-btn" @click.prevent="hideAdminLogin"><i class="fa-solid fa-xmark"></i></button>
 
@@ -64,23 +64,11 @@ function login() {
   flex-direction: column;
   gap: var(--small-space);
 
-  /* Position */
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
-
   /* Sizing */
   padding: max(4vw, 40px) max(3vw, 30px);
   min-width: var(--admin-form-min-width);
   min-height: var(--admin-form-min-height);
 
-  /* Effect */
-  background-color: var(--dominant);
-  color: var(--text-dark);
-  border-radius: 5px;
-  box-shadow: 0px 5px 10px var(--dominant-shade);
   text-align: left;
 }
 

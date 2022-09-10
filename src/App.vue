@@ -16,7 +16,6 @@ import SectionContent from "./components/SectionContent.vue"
 </script>
 
 <style>
-
 /* ==================== 
  1. Variables
 ==================== */
@@ -178,5 +177,34 @@ header p {
   color: var(--complement);
   box-shadow: 0 2px 10px var(--complement);
   transition: 0s;
+}
+
+/* Box */
+.floating-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+
+/* Layer */
+.overlay {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+/* Effect */
+.glow {
+  background-color: var(--dominant);
+  color: var(--text-dark);
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px var(--dominant-shade);
 }
 </style>
