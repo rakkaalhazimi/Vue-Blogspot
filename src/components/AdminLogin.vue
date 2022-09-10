@@ -1,7 +1,7 @@
 <template>
-  <div id="admin-form">
+  <form id="admin-form">
 
-    <button class="admin-close-btn" @click="hideAdminLogin"><i class="fa-solid fa-xmark"></i></button>
+    <button class="admin-close-btn" @click.prevent="hideAdminLogin"><i class="fa-solid fa-xmark"></i></button>
     
     <h2 class="admin-form-title">LOGIN</h2>
     <div class="admin-form-item">
@@ -18,8 +18,8 @@
       </div>
     </div>
 
-    <button class="btn">Login</button>
-  </div>
+    <button class="btn" @click.prevent="">Login</button>
+  </form>
 
   <div id="admin-overlay"></div>
 </template>
