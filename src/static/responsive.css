@@ -21,6 +21,7 @@
         /* Sizing */
         /* horizontal padding is the same as nav */
         padding: var(--small-space) 0;
+        width: 90vw;
         height: 100vh;
 
         /* Color */
@@ -28,11 +29,11 @@
         transition: var(--default-transition);
     }
 
-    .nav-link-item a {
+    .nav-link {
         width: 90vw;
     }
 
-    .nav-link-item a:hover {
+    .nav-link:hover {
         transition: var(--default-transition);
     }
 
