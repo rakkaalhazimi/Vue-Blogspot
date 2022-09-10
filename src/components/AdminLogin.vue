@@ -18,7 +18,7 @@
       </div>
     </div>
 
-    <button class="btn" @click.prevent="">Login</button>
+    <button class="btn" @click.prevent="login">Login</button>
   </form>
 
   <div id="admin-overlay"></div>
@@ -30,5 +30,18 @@
     let adminOverlay = document.getElementById("admin-overlay")
     adminLogin.style.display = "none"
     adminOverlay.style.display = "none"
+  }
+
+  function login() {
+    let adminLogin = document.getElementById("admin-form")
+    let username = document.getElementById("admin-username")
+    let password = document.getElementById("admin-password")
+
+    adminLogin.reset()
+    if (username == "rakka" && password == "rakka") {
+      alert("login berhasil")
+      hideAdminLogin()
+      
+    } else alert("login gagal")
   }
 </script>
