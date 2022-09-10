@@ -16,8 +16,15 @@ import SectionContent from "./components/SectionContent.vue"
 </script>
 
 <style>
+
+/* ==================== 
+ 1. Variables
+==================== */
 :root {
-  /* Color */
+
+  /* -------------------- 
+   1.1 Color Variables
+  --------------------- */
   --dominant: #222831;
   --dominant-shade: #13171D;
   --dominant-transparent: rgba(34, 40, 49, 0.8);
@@ -26,7 +33,9 @@ import SectionContent from "./components/SectionContent.vue"
   --text-dark: #f0eeee;
   --text-light: #181818;
 
-  /* Margin */
+  /* -------------------- 
+   1.2 Margin Variables
+  --------------------- */
   --text-margin: 20px;
   --vw-margin: 5vw;
 
@@ -34,7 +43,9 @@ import SectionContent from "./components/SectionContent.vue"
   --medium-space: 20px;
   --big-space: 30px;
 
-  /* Padding */
+  /* -------------------- 
+   1.3 Padding Variables
+  --------------------- */
   --small-padding: 5px;
   --medium-padding: 10px;
   --big-padding: 15px;
@@ -42,7 +53,9 @@ import SectionContent from "./components/SectionContent.vue"
   --button-padding: 15px;
   --input-padding: 15px;
 
-  /* Size */
+  /* -------------------- 
+  1.4 Size Variables
+  --------------------- */
   --navbar-link-height: 50px;
   --navbar-link-width: 120px;
 
@@ -57,10 +70,15 @@ import SectionContent from "./components/SectionContent.vue"
 
   --icon-size: 1.2em;
 
-  /* Transition */
+  /* ---------------------- 
+  1.4 Transition Variables
+  ------------------------- */
   --default-transition: all 0.5s ease;
 }
 
+/* ==================== 
+ 2. Default Styles
+==================== */
 * {
   margin: 0;
   padding: 0;
@@ -106,36 +124,41 @@ ul {
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: var(--medium-padding);
-    min-height: 50vh;
-    background-color: var(--dominant-shade);
-    color: var(--text-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--medium-padding);
+  min-height: 50vh;
+  background-color: var(--dominant-shade);
+  color: var(--text-dark);
 }
 
 header h1 {
-    font-size: clamp(1.2rem, 5vw, 3.5rem);
+  font-size: clamp(1.2rem, 5vw, 3.5rem);
 }
 
 header h2 {
-    font-size: clamp(1.5rem, 3.5vw, 2rem);
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
 }
 
 header h3 {
-    font-size: clamp(1.17rem, 2vw, 1.5rem);
+  font-size: clamp(1.17rem, 2vw, 1.5rem);
 }
 
 header h4 {
-    font-size: clamp(1rem, 1.5vw, 1.17rem);
+  font-size: clamp(1rem, 1.5vw, 1.17rem);
 }
 
 header p {
-    font-size: clamp(0.8rem, 1.2vw, 1.1rem);
+  font-size: clamp(0.8rem, 1.2vw, 1.1rem);
 }
 
+/* ==================== 
+ 3. Components
+==================== */
+
+/* Button */
 .btn {
   padding: 1em;
   min-width: 6em;
