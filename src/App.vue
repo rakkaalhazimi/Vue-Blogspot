@@ -211,6 +211,12 @@ header p {
 
 
 
+/* Typography */
+.title {
+  margin-bottom: .5em;
+}
+
+
 /* Effect */
 .glow {
   background-color: var(--dominant);

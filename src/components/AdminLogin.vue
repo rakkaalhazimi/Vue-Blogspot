@@ -5,7 +5,7 @@
       <i class="fa-solid fa-xmark"></i>
     </button>
 
-    <h2 class="admin-form-title">LOGIN</h2>
+    <h2 class="title">LOGIN</h2>
     <div class="form-item">
       <label for="admin-username">Username</label>
       <div class="admin-form-bg">
@@ -72,10 +72,6 @@ function login() {
   min-height: var(--admin-form-min-height);
 
   text-align: left;
-}
-
-.admin-form-title {
-  margin-bottom: var(--small-space);
 }
 
 .admin-form-bg {
