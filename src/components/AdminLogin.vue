@@ -105,13 +105,4 @@ function login() {
 .admin-login-btn:hover {
   color: var(--text-dark);
 }
-
-#admin-overlay {
-  display: none;
-  position: fixed;
-  z-index: 2;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.4);
-}
 </style>
