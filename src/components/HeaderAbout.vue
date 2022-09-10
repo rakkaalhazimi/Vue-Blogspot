@@ -13,7 +13,7 @@
 </template>
 
 <style>
-.header-about {
+header.header-about {
   margin-bottom: 0;
   height: 90vh;
 }

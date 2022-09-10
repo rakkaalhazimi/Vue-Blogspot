@@ -25,10 +25,17 @@
 </template>
 
 <script setup>
-let adminLogin = document.getElementById("admin-form")
-let adminOverlay = document.getElementById("admin-overlay")
-let username = document.getElementById("admin-username")
-let password = document.getElementById("admin-password")
+import { onMounted } from "vue"
+
+
+let adminLogin, adminOverlay, username, password
+
+onMounted(() => {
+  adminLogin = document.getElementById("admin-form")
+  adminOverlay = document.getElementById("admin-overlay")
+  username = document.getElementById("admin-username")
+  password = document.getElementById("admin-password")
+})
 
 function hideAdminLogin() {
   adminLogin.style.display = "none"
