@@ -1,7 +1,7 @@
 <template>
   <form id="admin-form" class="form-card floating-center glow">
 
-    <button class="admin-close-btn" @click.prevent="hideAdminLogin">
+    <button class="close-btn" @click.prevent="hideAdminLogin">
       <i class="fa-solid fa-xmark"></i>
     </button>
 
@@ -59,16 +59,6 @@ function login() {
 <style>
 #admin-form {
   display: none;
-}
-
-.admin-close-btn {
-  position: absolute;
-  top: 5%;
-  right: 5%;
-  background: transparent;
-  color: var(--text-dark);
-  font-size: 1.2em;
-
 }
 
 .admin-login-btn {
