@@ -1,7 +1,7 @@
 <template>
   <nav>
     <h1 class="nav-logo">ALHAZIMI</h1>
-    <ul class="nav-link-container">
+    <ul id="nav-link-container">
       <li class="nav-link-item">
         <button class="nav-close-btn" @click="hideNavbar"><i class="fa-solid fa-xmark"></i></button>
       </li>
@@ -23,24 +23,28 @@
 </template>
 
 <script setup>
+import { onMounted } from 'vue';
+
+let nav, admin, adminOverlay
+
+onMounted(() => {
+  nav = document.getElementById("nav-link-container")
+  admin = document.getElementById("admin-form")
+  adminOverlay = document.getElementById("admin-overlay")
+})
+
 function showNavbar() {
-  let nav = document.getElementsByClassName("nav-link-container")[0]
   nav.style.right = 0
 }
 
 function hideNavbar() {
-  let nav = document.getElementsByClassName("nav-link-container")[0]
   nav.style.right = "-90vw"
 }
 
 function showAdminLogin() {
-  let admin = document.getElementById("admin-form")
-  let adminOverlay = document.getElementById("admin-overlay")
   admin.style.display = "flex";
   adminOverlay.style.display = "block";
 }
-
-
 </script>
 
 <style>
@@ -57,7 +61,7 @@ nav {
   backdrop-filter: blur(3px);
 }
 
-.nav-link-container {
+#nav-link-container {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -106,7 +110,7 @@ nav {
     justify-content: space-between;
   }
 
-  .nav-link-container {
+  #nav-link-container {
     /* Display */
     display: flex;
     flex-direction: column;
