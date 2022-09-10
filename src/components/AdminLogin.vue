@@ -23,7 +23,7 @@
     <button class="btn" @click.prevent="login">Login</button>
   </form>
 
-  <div id="admin-overlay"></div>
+  <div id="admin-overlay" class="overlay"></div>
 </template>
 
 <script setup>
