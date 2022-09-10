@@ -8,7 +8,7 @@
       <li class="nav-link-item"><router-link to="/" class="nav-link" >Home</router-link></li>
       <li class="nav-link-item"><router-link to="/about" class="nav-link" >About</router-link></li>
       <li class="nav-link-item"><router-link to="/projects" class="nav-link" >Projects</router-link></li>
-      <li class="nav-link-item"><button class="nav-link login-btn">Login</button></li>
+      <li class="nav-link-item"><button @click="showAdminLogin" class="nav-link login-btn">Login</button></li>
     </ul>
     <button class="nav-menu-bars" @click="showNavbar">
       <i class="fa-solid fa-bars"></i>
@@ -25,6 +25,13 @@
   function hideNavbar() {
     let nav = document.getElementsByClassName("nav-link-container")[0]
     nav.style.right = "-90vw"
+  }
+
+  function showAdminLogin() {
+    let admin = document.getElementById("admin-form")
+    let adminOverlay = document.getElementById("admin-overlay")
+    admin.style.display = "flex";
+    adminOverlay.style.display = "block";
   }
 
 
