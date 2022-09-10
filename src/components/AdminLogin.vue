@@ -1,12 +1,12 @@
 <template>
-  <form id="admin-form" class="floating-box glow">
+  <form id="admin-form" class="floating-center glow">
 
     <button class="admin-close-btn" @click.prevent="hideAdminLogin">
       <i class="fa-solid fa-xmark"></i>
     </button>
 
     <h2 class="title">LOGIN</h2>
-    
+
     <div class="form-item">
       <label for="admin-username">Username</label>
       <input id="admin-username" class="input-text" type="text" placeholder="username">

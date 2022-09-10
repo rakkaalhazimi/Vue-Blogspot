@@ -187,8 +187,8 @@ header p {
   margin-bottom: var(--small-space);
 }
 
-/* Box */
-.floating-box {
+/* Position */
+.floating-center {
   position: fixed;
   top: 50%;
   left: 50%;
