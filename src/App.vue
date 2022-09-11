@@ -178,11 +178,7 @@ header p {
 }
 
 .close-btn {
-  position: absolute;
-  top: 5%;
-  right: 5%;
   background: transparent;
-  color: var(--text-dark);
   font-size: 1.2em;
 }
 
