@@ -197,6 +197,17 @@ header p {
   margin-bottom: var(--small-space);
 }
 
+.link-list {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: var(--small-space);
+}
+
+.link-item {
+  display: flex;
+  align-items: center;
+}
+
 /* Card */
 .form-card {
   display: flex;

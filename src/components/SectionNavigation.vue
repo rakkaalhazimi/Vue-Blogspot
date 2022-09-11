@@ -1,27 +1,29 @@
 <template>
   <nav>
-    <h1 class="nav-logo">ALHAZIMI</h1>
-    <ul id="nav-link-container">
-      <li class="nav-link-item">
-        <button class="nav-close-btn" @click="hideNavbar"><i class="fa-solid fa-xmark"></i></button>
+    <h1 id="nav-logo">ALHAZIMI</h1>
+    <ul id="nav-link-container" class="link-list">
+      <li class="link-item">
+        <button class="close-btn" @click="hideNavbar">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
       </li>
-      <li class="nav-link-item">
-        <router-link to="/" class="nav-link">Home</router-link>
+      <li class="link-item">
+        <router-link to="/" class="">Home</router-link>
       </li>
-      <li class="nav-link-item">
-        <router-link to="/about" class="nav-link">About</router-link>
+      <li class="link-item">
+        <router-link to="/about" class="">About</router-link>
       </li>
-      <li class="nav-link-item">
-        <router-link to="/projects" class="nav-link">Projects</router-link>
+      <li class="link-item">
+        <router-link to="/projects" class="">Projects</router-link>
       </li>
-      <li class="nav-link-item" v-if="!isLogin">
-        <button @click="showAdminLogin" class="nav-link">Login</button>
+      <li class="link-item" v-if="!isLogin">
+        <button @click="showAdminLogin" class="">Login</button>
       </li>
-      <li class="nav-link-item" v-if="isLogin">
-        <button @click="userLogout" class="nav-link">Logout</button>
+      <li class="link-item" v-if="isLogin">
+        <button @click="userLogout" class="">Logout</button>
       </li>
     </ul>
-    <button class="nav-menu-bars" @click="showNavbar">
+    <button class="menu-bars-btn" @click="showNavbar">
       <i class="fa-solid fa-bars"></i>
     </button>
   </nav>
@@ -70,49 +72,6 @@ nav {
   width: 100%;
   background-color: var(--dominant-transparent);
   backdrop-filter: blur(3px);
-}
-
-#nav-link-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  column-gap: var(--small-space);
-  width: 100%;
-}
-
-.nav-link-item:last-child {
-  margin-left: auto;
-}
-
-.nav-logo,
-.nav-link,
-.nav-menu-bars,
-.nav-close-btn {
-  height: var(--navbar-link-height);
-  line-height: var(--navbar-link-height);
-  letter-spacing: 1px;
-  background-color: var(--dominant);
-  color: var(--text-dark);
-}
-
-.nav-link {
-  width: var(--navbar-link-width);
-}
-
-.nav-link.router-link-exact-active {
-  color: var(--accent);
-}
-
-.nav-link:hover {
-  color: var(--accent);
-  transition: var(--default-transition);
-}
-
-.nav-menu-bars,
-.nav-close-btn {
-  display: none;
-  font-size: 1.4em;
-  background: none;
 }
 
 
