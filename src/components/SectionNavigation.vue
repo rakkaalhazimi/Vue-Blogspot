@@ -2,30 +2,42 @@
   <nav class="sticky-top">
     <h1 id="nav-logo">ALHAZIMI</h1>
     <ul id="nav-link-container" class="link-list">
+
+      <!-- Navbar close button -->
       <li class="link-item">
         <button class="close-btn" @click="hideNavbar">
           <i class="fa-solid fa-xmark"></i>
         </button>
       </li>
-      <li class="link-item">
-        <router-link to="/" class="nav-link small-text text-dark">Home</router-link>
+
+      <!-- Navbar links -->
+      <li class="link-list">
+        <div class="link-item">
+          <router-link to="/" class="nav-link small-text text-dark">Home</router-link>
+        </div>
+        <div class="link-item">
+          <router-link to="/about" class="nav-link small-text text-dark">About</router-link>
+        </div>
+        <div class="link-item">
+          <router-link to="/projects" class="nav-link small-text text-dark">Projects</router-link>
+        </div>
       </li>
-      <li class="link-item">
-        <router-link to="/about" class="nav-link small-text text-dark">About</router-link>
-      </li>
-      <li class="link-item">
-        <router-link to="/projects" class="nav-link small-text text-dark">Projects</router-link>
-      </li>
-      <li class="link-item" v-if="!isLogin">
+      
+      <!-- Navbar login button -->
+      <li id="nav-login" class="link-item" v-if="!isLogin">
         <button @click="showAdminLogin" class="nav-link small-text text-dark">Login</button>
       </li>
-      <li class="link-item" v-if="isLogin">
+      <li id="nav-logout" class="link-item" v-if="isLogin">
         <button @click="userLogout" class="nav-link small-text text-dark">Logout</button>
       </li>
+
     </ul>
+
+    <!-- Navbar menu bar -->
     <button id="nav-menu-btn" @click="showNavbar">
       <i class="fa-solid fa-bars"></i>
     </button>
+
   </nav>
 </template>
 
@@ -66,13 +78,21 @@ nav {
   flex-direction: row;
   justify-content: flex-start;
   column-gap: var(--medium-space);
-  
+
   padding: var(--small-space) 5vw;
   width: 100%;
   background-color: var(--dominant-transparent);
   backdrop-filter: blur(3px);
 }
 
+#nav-link-container {
+  width: 100%;
+}
+
+#nav-login,
+#nav-logout {
+  margin-left: auto;
+}
 
 .nav-link:hover {
   color: var(--accent);
