@@ -208,7 +208,7 @@ header p {
 .link-list {
   display: flex;
   justify-content: flex-start;
-  column-gap: var(--small-space);
+  column-gap: var(--medium-space);
 }
 
 .link-item {
