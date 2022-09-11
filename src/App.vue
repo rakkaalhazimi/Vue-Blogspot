@@ -128,7 +128,6 @@ header {
   align-items: center;
   padding: var(--medium-padding);
   min-height: 50vh;
-  background-color: var(--dominant-shade);
   color: var(--text-dark);
 }
 
