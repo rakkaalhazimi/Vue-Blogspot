@@ -27,7 +27,7 @@
     </ul>
 
     <!-- Navbar menu bar -->
-    <button id="nav-menu-btn" @click="showNavbar">
+    <button id="nav-menu-btn" class="text-dark" @click="showHideNavbar">
       <i class="fa-solid fa-bars"></i>
     </button>
 
@@ -51,12 +51,8 @@ onMounted(() => {
   adminOverlay = document.getElementById("admin-overlay")
 })
 
-function showNavbar() {
-  nav.style.right = 0
-}
-
-function hideNavbar() {
-  nav.style.right = "-90vw"
+function showHideNavbar() {
+  nav.style.left = nav.style.left != "0px" ? "0px" : "-40vw"
 }
 
 function showAdminLogin() {
