@@ -111,16 +111,6 @@ ul {
   list-style-type: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
-a,
-button {
-  color: var(--text-dark);
-}
-
 #app {
   display: flex;
   flex-direction: column;

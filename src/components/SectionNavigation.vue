@@ -1,6 +1,6 @@
 <template>
   <nav class="sticky-top">
-    <h1 id="nav-logo">ALHAZIMI</h1>
+    <h1 id="nav-logo" class="text-dark">ALHAZIMI</h1>
     <ul id="nav-link-container" class="link-list">
 
       <!-- Navbar close button -->
