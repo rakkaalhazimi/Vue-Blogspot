@@ -94,6 +94,7 @@ a {
 }
 
 button {
+  background: transparent;
   border: none;
   font-size: 1rem;
   cursor: pointer;
