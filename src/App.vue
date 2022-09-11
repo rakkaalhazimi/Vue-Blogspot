@@ -192,8 +192,7 @@ header p {
 
 .link-list {
   display: flex;
-  justify-content: flex-start;
-  column-gap: var(--medium-space);
+  column-gap: 3rem;
 }
 
 .link-item {
