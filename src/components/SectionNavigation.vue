@@ -1,28 +1,21 @@
 <template>
   <nav class="sticky-top">
     <h1 id="nav-logo" class="text-dark">ALHAZIMI</h1>
+
+    <!-- Navbar links -->
     <ul id="nav-link-container" class="link-list">
 
-      <!-- Navbar close button -->
+      <!-- Navbar page links -->
       <li class="link-item">
-        <button class="close-btn" @click="hideNavbar">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
+        <router-link to="/" class="nav-link small-text text-dark">Home</router-link>
+      </li>
+      <div class="link-item">
+        <router-link to="/about" class="nav-link small-text text-dark">About</router-link>
+      </div>
+      <li class="link-item">
+        <router-link to="/projects" class="nav-link small-text text-dark">Projects</router-link>
       </li>
 
-      <!-- Navbar links -->
-      <li class="link-list">
-        <div class="link-item">
-          <router-link to="/" class="nav-link small-text text-dark">Home</router-link>
-        </div>
-        <div class="link-item">
-          <router-link to="/about" class="nav-link small-text text-dark">About</router-link>
-        </div>
-        <div class="link-item">
-          <router-link to="/projects" class="nav-link small-text text-dark">Projects</router-link>
-        </div>
-      </li>
-      
       <!-- Navbar login button -->
       <li id="nav-login" class="link-item" v-if="!isLogin">
         <button @click="showAdminLogin" class="nav-link small-text text-dark">Login</button>
@@ -75,11 +68,8 @@ function showAdminLogin() {
 <style>
 nav {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  column-gap: var(--medium-space);
-
-  padding: var(--small-space) 5vw;
+  column-gap: 5rem;
+  padding: 1rem 5vw;
   width: 100%;
   background-color: var(--dominant-transparent);
   backdrop-filter: blur(3px);
@@ -89,13 +79,17 @@ nav {
   width: 100%;
 }
 
+.nav-link:hover {
+  color: var(--accent);
+}
+
 #nav-login,
 #nav-logout {
   margin-left: auto;
 }
 
-.nav-link:hover {
-  color: var(--accent);
+#nav-menu-btn {
+  display: none;
 }
 
 
@@ -106,41 +100,38 @@ nav {
 
   #nav-link-container {
     /* Display */
-    display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    row-gap: 1rem;
 
     /* Position */
     position: absolute;
     top: 0;
-    right: -90vw;
+    left: -40vw;
 
-    /* Sizing */
-    /* horizontal padding is the same as nav */
-    padding: var(--small-space) 0;
-    width: 90vw;
+    /* Size */
+    padding-top: 1rem;
+    padding-left: 1rem;
+    width: 40vw;
     height: 100vh;
 
     /* Color */
-    background-color: var(--dominant);
+    background-color: var(--dominant-shade);
     transition: var(--default-transition);
   }
 
-  .nav-link {
+  #nav-link-list {
+    flex-direction: column;
     width: 90vw;
   }
 
-  .nav-link:hover {
-    transition: var(--default-transition);
+  #nav-login,
+  #nav-logout {
+    margin-left: 0;
   }
 
-  .nav-menu-bars,
-  .nav-close-btn {
+  #nav-menu-btn {
     display: block;
   }
 
-  .nav-close-btn {
-    margin-left: 90%;
-  }
 }
 </style>
