@@ -8,19 +8,19 @@
         </button>
       </li>
       <li class="link-item">
-        <router-link to="/" class="small-text">Home</router-link>
+        <router-link to="/" class="nav-link small-text text-dark">Home</router-link>
       </li>
       <li class="link-item">
-        <router-link to="/about" class="small-text">About</router-link>
+        <router-link to="/about" class="nav-link small-text text-dark">About</router-link>
       </li>
       <li class="link-item">
-        <router-link to="/projects" class="small-text">Projects</router-link>
+        <router-link to="/projects" class="nav-link small-text text-dark">Projects</router-link>
       </li>
       <li class="link-item" v-if="!isLogin">
-        <button @click="showAdminLogin" class="small-text">Login</button>
+        <button @click="showAdminLogin" class="nav-link small-text text-dark">Login</button>
       </li>
       <li class="link-item" v-if="isLogin">
-        <button @click="userLogout" class="small-text">Logout</button>
+        <button @click="userLogout" class="nav-link small-text text-dark">Logout</button>
       </li>
     </ul>
     <button id="nav-menu-btn" @click="showNavbar">
@@ -71,6 +71,11 @@ nav {
   width: 100%;
   background-color: var(--dominant-transparent);
   backdrop-filter: blur(3px);
+}
+
+
+.nav-link:hover {
+  color: var(--accent);
 }
 
 

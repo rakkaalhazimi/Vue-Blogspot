@@ -271,6 +271,14 @@ header p {
   font-size: 0.9em;
 }
 
+.text-dark {
+  color: var(--text-dark);
+}
+
+.text-light {
+  color: var(--text-light);
+}
+
 
 /* Effect */
 .glow {
