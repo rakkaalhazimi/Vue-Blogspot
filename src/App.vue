@@ -96,7 +96,6 @@ a {
 button {
   background: transparent;
   border: none;
-  font-size: 1rem;
   cursor: pointer;
 }
 
@@ -112,6 +111,16 @@ ul {
   list-style-type: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+button {
+  color: var(--text-dark);
+}
+
 #app {
   display: flex;
   flex-direction: column;
@@ -119,7 +128,6 @@ ul {
   min-height: 100vh;
   font-family: sans-serif;
   background-color: var(--dominant);
-  color: var(--text-dark);
   text-align: center;
 }
 
@@ -230,6 +238,10 @@ header p {
   z-index: 3;
 }
 
+.sticky-top {
+  position: fixed;
+  top: 0;
+}
 
 /* Layer */
 .overlay {
@@ -255,6 +267,10 @@ header p {
   margin-bottom: .5em;
 }
 
+.small-text {
+  font-size: 0.9em;
+}
+
 
 /* Effect */
 .glow {
@@ -262,5 +278,9 @@ header p {
   color: var(--text-dark);
   border-radius: 5px;
   box-shadow: 0px 5px 10px var(--dominant-shade);
+}
+
+.hide {
+  display: none;
 }
 </style>

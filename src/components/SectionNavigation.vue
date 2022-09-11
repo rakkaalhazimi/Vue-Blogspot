@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <nav class="sticky-top">
     <h1 id="nav-logo">ALHAZIMI</h1>
     <ul id="nav-link-container" class="link-list">
       <li class="link-item">
@@ -8,22 +8,22 @@
         </button>
       </li>
       <li class="link-item">
-        <router-link to="/" class="">Home</router-link>
+        <router-link to="/" class="small-text">Home</router-link>
       </li>
       <li class="link-item">
-        <router-link to="/about" class="">About</router-link>
+        <router-link to="/about" class="small-text">About</router-link>
       </li>
       <li class="link-item">
-        <router-link to="/projects" class="">Projects</router-link>
+        <router-link to="/projects" class="small-text">Projects</router-link>
       </li>
       <li class="link-item" v-if="!isLogin">
-        <button @click="showAdminLogin" class="">Login</button>
+        <button @click="showAdminLogin" class="small-text">Login</button>
       </li>
       <li class="link-item" v-if="isLogin">
-        <button @click="userLogout" class="">Logout</button>
+        <button @click="userLogout" class="small-text">Logout</button>
       </li>
     </ul>
-    <button class="menu-bars-btn" @click="showNavbar">
+    <button id="nav-menu-btn" @click="showNavbar">
       <i class="fa-solid fa-bars"></i>
     </button>
   </nav>
@@ -66,8 +66,7 @@ nav {
   flex-direction: row;
   justify-content: flex-start;
   column-gap: var(--medium-space);
-  position: sticky;
-  top: 0;
+  
   padding: var(--small-space) 5vw;
   width: 100%;
   background-color: var(--dominant-transparent);
