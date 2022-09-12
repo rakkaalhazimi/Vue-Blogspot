@@ -4,17 +4,17 @@
     min-width: 10em;
     border: 1px solid $complement;
     transition: $default-transition;
-}
+    
+    &:hover {
+        color: $accent;
+        border: 1px solid $accent;
+    }
 
-.btn:hover {
-    color: $accent;
-    border: 1px solid $accent;
-}
-
-.btn:active {
-    color: $complement;
-    border: 1px solid $complement;
-    transition: 0s;
+    &:active {
+        color: $complement;
+        border: 1px solid $complement;
+        transition: 0s;
+    }
 }
 
 .close-btn {
