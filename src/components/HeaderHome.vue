@@ -1,6 +1,21 @@
 <template>
-  <header>
-    <h1>Recognize Machine Learning</h1>
-    <p>Where machine learning is taught concisely</p>
+  <header id="header-home" class="flex-col">
+    <h1 id="header-home-title"><span class="text-accent">Recognize</span><br/>Machine Learning</h1>
+    <p id="header-home-subtitle">Where machine learning is taught concisely</p>
+    <button class="btn text-dark">Start</button>
   </header>
 </template>
+
+<style>
+  #header-home {
+    row-gap: 0;
+  }
+
+  #header-home-title {
+    margin-bottom: 0.5rem;
+  }
+
+  #header-home-subtitle {
+    margin-bottom: 2rem;
+  }
+</style>
