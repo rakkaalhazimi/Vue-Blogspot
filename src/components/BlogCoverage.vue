@@ -1,5 +1,5 @@
 <template>
-  <div id="blog-cov" class="content-pad text-light">
+  <div id="blog-cov">
 
     <!-- Title and subtitle -->
     <h2 class="subtitle">Blog Coverage</h2>
@@ -33,6 +33,8 @@
 
 <style lang="scss">
 #blog-cov {
+  padding: $content-pad;
+  color: $text-light;
   background-color: $complement;
 }
 

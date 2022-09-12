@@ -25,7 +25,7 @@
       <div id="editor" :editor="editor"></div>
     </div>
 
-    <button class="btn" @click.prevent="showPreview">Publish</button>
+    <button id="publish-btn" @click.prevent="showPreview">Publish</button>
 
     <div ref="preview" class="preview"></div>
 
@@ -121,6 +121,10 @@ onMounted(() => {
 .post-form-label {
   margin-bottom: 1rem;
   color: $text-dark;
+}
+
+#publish-btn {
+  @include hollow-btn();
 }
 
 .post-form-item input {

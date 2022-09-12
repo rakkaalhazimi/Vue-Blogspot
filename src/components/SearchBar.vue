@@ -1,6 +1,6 @@
 <template>
   <div id="search-bar">
-    <input class="input-text" type="text" placeholder="Search Post" v-model="postStore.keywords">
+    <input id="search-input" type="text" placeholder="Search Post" v-model="postStore.keywords">
   </div>
 
 </template>
@@ -11,4 +11,12 @@ import { usePostStore } from "../stores/post";
 const postStore = usePostStore()
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+  #search-bar {
+    margin-bottom: 5rem;
+  }
+
+  #search-input {
+    @include hollow-input;
+  }
+</style>

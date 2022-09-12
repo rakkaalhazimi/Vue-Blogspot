@@ -1,5 +1,5 @@
 <template>
-  <nav class="sticky-top">
+  <nav>
     <h1 id="nav-logo" class="text-dark">ALHAZIMI</h1>
 
     <!-- Navbar links -->
@@ -7,21 +7,21 @@
 
       <!-- Navbar page links -->
       <li>
-        <router-link to="/" class="nav-link small-text text-dark">Home</router-link>
+        <router-link to="/" class="nav-link">Home</router-link>
       </li>
       <div>
-        <router-link to="/about" class="nav-link small-text text-dark">About</router-link>
+        <router-link to="/about" class="nav-link">About</router-link>
       </div>
       <li>
-        <router-link to="/projects" class="nav-link small-text text-dark">Projects</router-link>
+        <router-link to="/projects" class="nav-link">Projects</router-link>
       </li>
 
       <!-- Navbar login button -->
       <li id="nav-login" v-if="!isLogin">
-        <button @click="showAdminLogin" class="nav-link small-text text-dark">Login</button>
+        <button @click="showAdminLogin" class="nav-link">Login</button>
       </li>
       <li id="nav-logout" v-if="isLogin">
-        <button @click="userLogout" class="nav-link small-text text-dark">Logout</button>
+        <button @click="userLogout" class="nav-link">Logout</button>
       </li>
 
     </ul>
@@ -63,10 +63,13 @@ function showAdminLogin() {
 
 <style lang="scss">
 nav {
+  @include sticky-top();
   @include flex-row($gap: 5rem);
+
   padding: 1rem 5vw;
   width: 100%;
   background-color: $dominant-transparent;
+  color: $text-dark;
   backdrop-filter: blur(3px);
 }
 
@@ -75,8 +78,14 @@ nav {
   width: 100%;
 }
 
-.nav-link:hover {
-  color: $accent;
+.nav-link {
+  color: $text-dark;
+  font-size: .9rem;
+  transition: $default-transition;
+
+  &:hover {
+    color: $accent;
+  }
 }
 
 #nav-login,

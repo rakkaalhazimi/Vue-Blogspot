@@ -18,9 +18,8 @@ const { keywords, filteredPosts } = storeToRefs(usePostStore())
 .blog-card-container {
   display: grid;
   grid-template-columns: repeat(2, 300px);
-  justify-content: center;
-  column-gap: 2rem;
-  row-gap: 2rem;
+  column-gap: 1rem;
+  row-gap: 1rem;
 }
 
 @media (max-width: 600px) {
