@@ -13,3 +13,73 @@
     align-items: center;
     column-gap: $gap;
 }
+
+@mixin hollow-btn {
+    padding: 1em;
+    min-width: 10em;
+    border: 1px solid $complement;
+    transition: $default-transition;
+
+    &:hover {
+        color: $accent;
+        border: 1px solid $accent;
+    }
+
+    &:active {
+        color: $complement;
+        border: 1px solid $complement;
+        transition: 0s;
+    }
+}
+
+@mixin hollow-input {
+    padding: .8em;
+    width: 100%;
+    background: transparent;
+    color: $text-dark;
+    border: 1px solid $complement;
+}
+
+@mixin icon-btn {
+    background: transparent;
+    color: $text-dark;
+    font-size: 1.2rem;
+    transition: $default-transition;
+
+    &:hover {
+        color: $accent;
+    }
+}
+
+@mixin card {
+    
+}
+
+@mixin floating-center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+@mixin sticky-top {
+    position: sticky;
+    top: 0;
+}
+
+@mixin overlay {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+@mixin glow {
+    background-color: $dominant;
+    color: $text-dark;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px $dominant-shade;
+}
