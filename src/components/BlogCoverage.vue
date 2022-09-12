@@ -41,8 +41,7 @@
 }
 
 #blog-cov-list {
-  justify-content: flex-start;
-  gap: 2rem;
+  @include flex-row($wrap: wrap, $gap: 2rem);
 }
 
 .blog-cov-item {

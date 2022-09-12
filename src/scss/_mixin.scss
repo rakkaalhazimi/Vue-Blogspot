@@ -1,15 +1,15 @@
-@mixin flex-col($justify: flex-start, $gap: 1em) {
+@mixin flex-col($justify: flex-start, $wrap: nowrap, $gap: 1em) {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: $wrap;
     justify-content: $justify;
-    gap: $gap;
+    row-gap: $gap;
 }
 
-@mixin flex-row($justify: flex-start, $gap: 1em) {
+@mixin flex-row($justify: flex-start, $wrap: nowrap, $gap: 1em) {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: $wrap;
     justify-content: $justify;
     align-items: center;
-    gap: $gap;
+    column-gap: $gap;
 }

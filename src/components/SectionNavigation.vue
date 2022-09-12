@@ -63,8 +63,7 @@ function showAdminLogin() {
 
 <style lang="scss">
 nav {
-  display: flex;
-  column-gap: 5rem;
+  @include flex-row($gap: 5rem);
   padding: 1rem 5vw;
   width: 100%;
   background-color: $dominant-transparent;
@@ -114,11 +113,6 @@ nav {
     /* Color */
     background-color: $dominant-shade;
     transition: $default-transition;
-  }
-
-  #nav-link-list {
-    flex-direction: column;
-    width: 90vw;
   }
 
   #nav-login,
