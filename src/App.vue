@@ -157,22 +157,19 @@ header p {
 /* Button */
 .btn {
   padding: 1em;
-  min-width: 6em;
-  border-radius: 4px;
-  background-color: var(--dominant-shade);
-  color: var(--text-dark);
+  min-width: 10em;
+  border: 1px solid var(--complement);
   transition: var(--default-transition);
 }
 
 .btn:hover {
-  background-color: var(--dominant-shade);
   color: var(--accent);
-  box-shadow: 0 2px 10px var(--accent);
+  border: 1px solid var(--accent);
 }
 
 .btn:active {
   color: var(--complement);
-  box-shadow: 0 2px 10px var(--complement);
+  border: 1px solid var(--complement);
   transition: 0s;
 }
 
