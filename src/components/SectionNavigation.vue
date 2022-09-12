@@ -6,21 +6,21 @@
     <ul id="nav-link-container" class="link-list">
 
       <!-- Navbar page links -->
-      <li class="link-item">
+      <li>
         <router-link to="/" class="nav-link small-text text-dark">Home</router-link>
       </li>
-      <div class="link-item">
+      <div>
         <router-link to="/about" class="nav-link small-text text-dark">About</router-link>
       </div>
-      <li class="link-item">
+      <li>
         <router-link to="/projects" class="nav-link small-text text-dark">Projects</router-link>
       </li>
 
       <!-- Navbar login button -->
-      <li id="nav-login" class="link-item" v-if="!isLogin">
+      <li id="nav-login" v-if="!isLogin">
         <button @click="showAdminLogin" class="nav-link small-text text-dark">Login</button>
       </li>
-      <li id="nav-logout" class="link-item" v-if="isLogin">
+      <li id="nav-logout" v-if="isLogin">
         <button @click="userLogout" class="nav-link small-text text-dark">Logout</button>
       </li>
 
