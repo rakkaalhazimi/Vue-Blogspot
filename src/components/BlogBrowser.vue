@@ -1,5 +1,10 @@
 <template>
-  <div id="blog-browse" class="content-pad">
+  <div id="blog-browse" class="content-pad text-dark">
+    
+    <!-- Title and subtitle -->
+    <h2 class="text-left">Browse My Posts</h2>
+    <p class="text-left">Start from here</p>
+
     <SearchBar />
     <BlogCardContainer />
   </div>
