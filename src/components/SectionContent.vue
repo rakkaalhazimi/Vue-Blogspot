@@ -6,6 +6,6 @@
 
 <style lang="scss">
 .content-view>* {
-  margin-bottom: max($big-space), 10vh;
+  margin-bottom: max(3rem), 10vh;
 }
 </style>

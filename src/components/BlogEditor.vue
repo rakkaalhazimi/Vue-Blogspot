@@ -107,24 +107,24 @@ onMounted(() => {
 #post-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: $medium-space;
+  gap: 2rem;
   padding: 0 5vw;
 }
 
 .post-form-item {
   display: flex;
   flex-direction: column;
-  margin-bottom: $medium-space;
+  margin-bottom: 2rem;
   text-align: left;
 }
 
 .post-form-label {
-  margin-bottom: $small-space;
+  margin-bottom: 1rem;
   color: $text-dark;
 }
 
 .post-form-item input {
-  padding: $medium-padding;
+  padding: 0.8rem;
 }
 
 #editor-item {

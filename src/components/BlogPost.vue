@@ -1,5 +1,5 @@
 <template>
-  <div class="blog-post">
+  <div class="blog-post text-dark">
     <h2 class="blog-title">{{ title }}</h2>
     <p class="blog-content" v-html="content"></p>
   </div>
@@ -16,11 +16,10 @@ defineProps({
 
 <style lang="scss">
 .blog-post {
-  margin: $vw-margin $vw-margin;
-  color: $text-dark;
+  margin: repeat(5vw);
 }
 
 .blog-title {
-  margin-bottom: $text-margin;
+  margin-bottom: 1em;
 }
 </style>

@@ -21,8 +21,8 @@ defineProps({
 
 <style lang="scss">
 .blog-card {
-  width: $card-width;
-  height: $card-height;
+  width: 300px;
+  height: 300px;
   background-color: $dominant;
   color: $text-dark;
 }

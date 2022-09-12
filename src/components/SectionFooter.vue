@@ -48,19 +48,19 @@
 <style lang="scss">
 footer {
   margin-top: auto;
-  padding: $big-padding;
+  padding: 1rem;
   background-color: $text-dark;
   color: $text-light;
 }
 
 .contact-container {
-  margin-bottom: $medium-space;
+  margin-bottom: 2rem;
 }
 
 .contact-title,
 .contact-desc,
 .made-with-title {
-  margin-bottom: $small-space;
+  margin-bottom: 1rem;
 }
 
 .contact-icon-list,
@@ -68,7 +68,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: $medium-space;
+  gap: 2rem;
 }
 
 .contact-icon-item>a,

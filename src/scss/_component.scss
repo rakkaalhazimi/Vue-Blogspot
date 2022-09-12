@@ -48,8 +48,8 @@
 .form-item {
     display: flex;
     flex-direction: column;
-    gap: $small-space;
-    margin-bottom: $small-space;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
 
 .link-list {
@@ -66,7 +66,7 @@
 .form-card {
     display: flex;
     flex-direction: column;
-    gap: $small-space;
+    gap: 1rem;
 
     padding: max(4vw, 40px) max(3vw, 30px);
     width: max(20vw, 300px);

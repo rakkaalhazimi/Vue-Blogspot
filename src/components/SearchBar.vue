@@ -19,8 +19,8 @@ const postStore = usePostStore()
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto $small-space;
-  padding: $medium-padding;
+  margin: 0 auto 1rem;
+  padding: 0.8rem;
   width: 60vw;
   background-color: $complement;
   border-radius: 20px;

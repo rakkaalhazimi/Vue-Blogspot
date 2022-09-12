@@ -17,21 +17,21 @@ const { keywords, filteredPosts } = storeToRefs(usePostStore())
 <style lang="scss">
 .blog-card-container {
   display: grid;
-  grid-template-columns: repeat(2, $card-width);
+  grid-template-columns: repeat(2, 300px);
   justify-content: center;
-  column-gap: $medium-space;
-  row-gap: $medium-space;
+  column-gap: 2rem;
+  row-gap: 2rem;
 }
 
 @media (max-width: 600px) {
   .blog-card-container {
-    grid-template-columns: repeat(1, $card-width);
+    grid-template-columns: repeat(1, 300px);
   }
 }
 
 @media (min-width: 1200px) {
   .blog-card-container {
-    grid-template-columns: repeat(3, $card-width);
+    grid-template-columns: repeat(3, 300px);
   }
 }
 </style>
