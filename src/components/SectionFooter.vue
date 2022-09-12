@@ -45,12 +45,12 @@
 </template>
 
 
-<style>
+<style lang="scss">
 footer {
   margin-top: auto;
   padding: var(--big-padding);
-  background-color: var(--text-dark);
-  color: var(--text-light);
+  background-color: $text-dark;
+  color: $text-light;
 }
 
 .contact-container {
@@ -73,13 +73,13 @@ footer {
 
 .contact-icon-item>a,
 .made-with-icon-item>a {
-  color: var(--text-light);
+  color: $text-light;
   font-size: var(--icon-size);
 }
 
 .contact-icon-item>a:hover,
 .made-with-icon-item>a:hover {
-  color: var(--accent);
+  color: $accent;
   transition: all 0.5 ease;
 }
 </style>

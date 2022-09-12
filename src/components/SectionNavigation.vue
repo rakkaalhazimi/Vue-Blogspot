@@ -61,13 +61,13 @@ function showAdminLogin() {
 }
 </script>
 
-<style>
+<style lang="scss">
 nav {
   display: flex;
   column-gap: 5rem;
   padding: 1rem 5vw;
   width: 100%;
-  background-color: var(--dominant-transparent);
+  background-color: $dominant-transparent;
   backdrop-filter: blur(3px);
 }
 
@@ -76,7 +76,7 @@ nav {
 }
 
 .nav-link:hover {
-  color: var(--accent);
+  color: $accent;
 }
 
 #nav-login,
@@ -111,7 +111,7 @@ nav {
     height: 100vh;
 
     /* Color */
-    background-color: var(--dominant-shade);
+    background-color: $dominant-shade;
     transition: var(--default-transition);
   }
 

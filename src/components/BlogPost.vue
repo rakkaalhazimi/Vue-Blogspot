@@ -14,10 +14,10 @@ defineProps({
 })
 </script>
 
-<style>
+<style lang="scss">
 .blog-post {
   margin: var(--vw-margin) var(--vw-margin);
-  color: var(--text-dark);
+  color: $text-dark;
 }
 
 .blog-title {

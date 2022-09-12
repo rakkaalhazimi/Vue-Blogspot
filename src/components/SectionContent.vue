@@ -4,7 +4,7 @@
   </section>
 </template>
 
-<style>
+<style lang="scss">
 .content-view>* {
   margin-bottom: max(var(--big-space), 10vh);
 }

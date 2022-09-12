@@ -31,9 +31,9 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
 #blog-cov {
-  background-color: var(--complement);
+  background-color: $complement;
 }
 
 #blog-cov-desc {

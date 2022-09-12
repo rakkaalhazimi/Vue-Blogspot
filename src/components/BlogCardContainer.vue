@@ -14,7 +14,7 @@ import BlogCard from "./BlogCard.vue"
 const { keywords, filteredPosts } = storeToRefs(usePostStore())
 </script>
 
-<style>
+<style lang="scss">
 .blog-card-container {
   display: grid;
   grid-template-columns: repeat(2, var(--card-width));

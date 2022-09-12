@@ -56,7 +56,7 @@ function login() {
 }
 </script>
 
-<style>
+<style lang="scss">
 #admin-form {
   display: none;
 }

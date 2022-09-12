@@ -103,7 +103,7 @@ onMounted(() => {
 
 </script>
 
-<style>
+<style lang="scss">
 #post-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -120,7 +120,7 @@ onMounted(() => {
 
 .post-form-label {
   margin-bottom: var(--small-space);
-  color: var(--text-dark);
+  color: $text-dark;
 }
 
 .post-form-item input {
@@ -133,8 +133,8 @@ onMounted(() => {
 
 #editor,
 .ql-toolbar {
-  background-color: var(--text-dark);
-  color: var(--text-light);
+  background-color: $text-dark;
+  color: $text-light;
 }
 
 @media (max-width: 600px) {

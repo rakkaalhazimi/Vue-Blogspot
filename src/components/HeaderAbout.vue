@@ -12,7 +12,7 @@
   </header>
 </template>
 
-<style>
+<style lang="scss">
 header.header-about {
   margin-bottom: 0;
   height: 90vh;
@@ -34,7 +34,7 @@ header.header-about {
 
 .about-title {
   margin-bottom: var(--big-space);
-  color: var(--accent);
+  color: $accent;
 }
 
 .about-desc {

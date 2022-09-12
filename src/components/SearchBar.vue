@@ -14,7 +14,7 @@ import { usePostStore } from "../stores/post";
 const postStore = usePostStore()
 </script>
 
-<style>
+<style lang="scss">
 #search-bar {
   display: flex;
   justify-content: space-between;
@@ -22,7 +22,7 @@ const postStore = usePostStore()
   margin: 0 auto var(--small-space);
   padding: var(--medium-padding);
   width: 60vw;
-  background-color: var(--complement);
+  background-color: $complement;
   border-radius: 20px;
 }
 

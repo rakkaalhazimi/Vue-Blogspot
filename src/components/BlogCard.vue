@@ -19,18 +19,18 @@ defineProps({
 })
 </script>
 
-<style>
+<style lang="scss">
 .blog-card {
   width: var(--card-width);
   height: var(--card-height);
-  background-color: var(--dominant);
-  color: var(--text-dark);
+  background-color: $dominant;
+  color: $text-dark;
 }
 
 .blog-card:hover {
-  /* box-shadow: 0px 2px 5px 1px var(--accent); */
-  background-color: var(--complement);
-  color: var(--text-light);
+  /* box-shadow: 0px 2px 5px 1px $accent; */
+  background-color: $complement;
+  color: $text-light;
   transition: var(--default-transition);
 }
 
