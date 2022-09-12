@@ -1,0 +1,147 @@
+// Button
+.btn {
+    padding: 1em;
+    min-width: 10em;
+    border: 1px solid $complement;
+    transition: var(--default-transition);
+}
+
+.btn:hover {
+    color: $accent;
+    border: 1px solid $accent;
+}
+
+.btn:active {
+    color: $complement;
+    border: 1px solid $complement;
+    transition: 0s;
+}
+
+.close-btn {
+    background: transparent;
+    font-size: 1.2em;
+}
+
+// Display
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 1em;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1em;
+}
+
+// Size
+.content-pad {
+    padding: 5rem 5vw;
+}
+
+// List
+.form-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--small-space);
+    margin-bottom: var(--small-space);
+}
+
+.link-list {
+    display: flex;
+    column-gap: 3rem;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+}
+
+// Card
+.form-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--small-space);
+
+    padding: max(4vw, 40px) max(3vw, 30px);
+    width: max(20vw, 300px);
+    height: auto;
+
+    text-align: left;
+}
+
+// Position
+.floating-center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+}
+
+// Layer
+.overlay {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+// Input
+.input-text {
+    padding: .8em;
+    width: 100%;
+    background-color: $text-dark;
+    color: $text-light;
+}
+
+
+// Typography
+.title {
+    margin-bottom: .5em;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.small-text {
+    font-size: 0.9em;
+}
+
+.text-dark {
+    color: $text-dark;
+}
+
+.text-light {
+    color: $text-light;
+}
+
+.text-accent {
+    color: $accent;
+}
+
+
+// Effect
+.glow {
+    background-color: $dominant;
+    color: $text-dark;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px $dominant-shade;
+}
+
+.hide {
+    display: none;
+}
