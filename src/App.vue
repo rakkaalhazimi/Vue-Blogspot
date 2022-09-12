@@ -178,6 +178,21 @@ header p {
   font-size: 1.2em;
 }
 
+/* Display */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 1em;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1em;
+}
+
 /* List */
 .form-item {
   display: flex;
@@ -257,6 +272,10 @@ header p {
 
 .text-light {
   color: var(--text-light);
+}
+
+.text-accent {
+  color: var(--accent);
 }
 
 
