@@ -182,15 +182,22 @@ header p {
 .flex-col {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   row-gap: 1em;
 }
 
 .flex-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   column-gap: 1em;
+}
+
+/* Size */
+.content-pad {
+  padding: 5rem 5vw;
 }
 
 /* List */
@@ -260,6 +267,10 @@ header p {
 /* Typography */
 .title {
   margin-bottom: .5em;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .small-text {
