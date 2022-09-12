@@ -77,18 +77,29 @@
 .input-text {
     padding: .8em;
     width: 100%;
-    background-color: $text-dark;
-    color: $text-light;
+    background: transparent;
+    color: $text-dark;
+    border: 1px solid $complement;
 }
 
 
 // Typography
 .title {
-    margin-bottom: .5em;
+    font-size: 2rem;
+    margin-bottom: .5rem;
 }
 
-.text-left {
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
     text-align: left;
+}
+
+.desc {
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: left;
+    margin-bottom: 2rem;
 }
 
 .small-text {

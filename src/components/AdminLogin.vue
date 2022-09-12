@@ -5,7 +5,7 @@
       <i class="fa-solid fa-xmark"></i>
     </button>
 
-    <h2 class="title">LOGIN</h2>
+    <h2 class="subtitle">LOGIN</h2>
 
     <div class="form-item">
       <label for="admin-username">Username</label>
