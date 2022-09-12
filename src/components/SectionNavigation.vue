@@ -72,6 +72,7 @@ nav {
 }
 
 #nav-link-container {
+  @include flex-row($gap: 3rem);
   width: 100%;
 }
 
