@@ -100,7 +100,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: var(--medium-padding);
+    padding: $medium-padding;
     min-height: 50vh;
     color: $text-dark;
 }

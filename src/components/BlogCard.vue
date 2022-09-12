@@ -21,8 +21,8 @@ defineProps({
 
 <style lang="scss">
 .blog-card {
-  width: var(--card-width);
-  height: var(--card-height);
+  width: $card-width;
+  height: $card-height;
   background-color: $dominant;
   color: $text-dark;
 }
@@ -31,7 +31,7 @@ defineProps({
   /* box-shadow: 0px 2px 5px 1px $accent; */
   background-color: $complement;
   color: $text-light;
-  transition: var(--default-transition);
+  transition: $default-transition;
 }
 
 .blog-card-link,

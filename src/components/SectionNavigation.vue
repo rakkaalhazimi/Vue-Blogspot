@@ -112,7 +112,7 @@ nav {
 
     /* Color */
     background-color: $dominant-shade;
-    transition: var(--default-transition);
+    transition: $default-transition;
   }
 
   #nav-link-list {

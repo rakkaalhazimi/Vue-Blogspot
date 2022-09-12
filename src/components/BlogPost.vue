@@ -16,11 +16,11 @@ defineProps({
 
 <style lang="scss">
 .blog-post {
-  margin: var(--vw-margin) var(--vw-margin);
+  margin: $vw-margin $vw-margin;
   color: $text-dark;
 }
 
 .blog-title {
-  margin-bottom: var(--text-margin);
+  margin-bottom: $text-margin;
 }
 </style>

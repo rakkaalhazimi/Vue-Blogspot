@@ -48,19 +48,19 @@
 <style lang="scss">
 footer {
   margin-top: auto;
-  padding: var(--big-padding);
+  padding: $big-padding;
   background-color: $text-dark;
   color: $text-light;
 }
 
 .contact-container {
-  margin-bottom: var(--medium-space);
+  margin-bottom: $medium-space;
 }
 
 .contact-title,
 .contact-desc,
 .made-with-title {
-  margin-bottom: var(--small-space);
+  margin-bottom: $small-space;
 }
 
 .contact-icon-list,
@@ -68,13 +68,13 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: var(--medium-space);
+  gap: $medium-space;
 }
 
 .contact-icon-item>a,
 .made-with-icon-item>a {
   color: $text-light;
-  font-size: var(--icon-size);
+  font-size: $icon-size;
 }
 
 .contact-icon-item>a:hover,

@@ -21,8 +21,8 @@ header.header-about {
 
 .about-photo {
   margin: 0 auto;
-  width: var(--photo-width);
-  height: var(--photo-height);
+  width: $photo-width;
+  height: $photo-height;
   border-radius: 100px;
 }
 
@@ -33,7 +33,7 @@ header.header-about {
 }
 
 .about-title {
-  margin-bottom: var(--big-space);
+  margin-bottom: $big-space;
   color: $accent;
 }
 

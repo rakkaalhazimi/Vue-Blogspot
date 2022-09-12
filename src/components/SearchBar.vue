@@ -19,8 +19,8 @@ const postStore = usePostStore()
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto var(--small-space);
-  padding: var(--medium-padding);
+  margin: 0 auto $small-space;
+  padding: $medium-padding;
   width: 60vw;
   background-color: $complement;
   border-radius: 20px;
@@ -32,7 +32,7 @@ const postStore = usePostStore()
 }
 
 #search-bar button {
-  font-size: var(--icon-size);
+  font-size: $icon-size;
   background: transparent;
 
 }
