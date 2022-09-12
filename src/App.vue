@@ -114,7 +114,6 @@ ul {
 #app {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   min-height: 100vh;
   font-family: sans-serif;
   background-color: var(--dominant);
@@ -223,7 +222,7 @@ header p {
 }
 
 .sticky-top {
-  position: fixed;
+  position: sticky;
   top: 0;
 }
 
