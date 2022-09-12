@@ -107,6 +107,10 @@ input:focus {
   outline: none;
 }
 
+img {
+  align-self: center;
+}
+
 ul {
   list-style-type: none;
 }
