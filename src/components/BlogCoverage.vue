@@ -2,28 +2,28 @@
   <div id="blog-cov" class="content-pad text-light">
 
     <!-- Title and subtitle -->
-    <h2 class="text-left">Blog Coverage</h2>
-    <p id="blog-cov-desc" class="text-left">What topics will you mostly read here</p>
+    <h2 class="subtitle">Blog Coverage</h2>
+    <p class="desc">What topics will you mostly read here</p>
 
     <!-- Image List -->
-    <ul id="blog-cov-list" class="flex-row">
-      <li class="blog-cov-item flex-col">
+    <ul id="blog-cov-list">
+      <li class="blog-cov-item">
         <img src="@/assets/machine-learning.png" />
         <p>Machine Learning</p>
       </li>
-      <li class="blog-cov-item flex-col">
+      <li class="blog-cov-item">
         <img src="@/assets/deep-learning.png" />
         <p>Deep Learning</p>
       </li>
-      <li class="blog-cov-item flex-col">
+      <li class="blog-cov-item">
         <img src="@/assets/math.png" />
         <p>Mathematics</p>
       </li>
-      <li class="blog-cov-item flex-col">
+      <li class="blog-cov-item">
         <img src="@/assets/statistic.png" />
         <p>Statistics</p>
       </li>
-      <li class="blog-cov-item flex-col">
+      <li class="blog-cov-item">
         <img src="@/assets/python.png" />
         <p>Python</p>
       </li>
@@ -34,10 +34,6 @@
 <style lang="scss">
 #blog-cov {
   background-color: $complement;
-}
-
-#blog-cov-desc {
-  margin-bottom: 3rem;
 }
 
 #blog-cov-list {
