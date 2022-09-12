@@ -4,7 +4,7 @@
     min-width: 10em;
     border: 1px solid $complement;
     transition: $default-transition;
-    
+
     &:hover {
         color: $accent;
         border: 1px solid $accent;
@@ -17,11 +17,16 @@
     }
 }
 
-.close-btn {
+.icon-btn {
     background: transparent;
+    color: $text-dark;
     font-size: 1.2em;
-}
+    transition: $default-transition;
 
+    &:hover {
+        color: $accent;
+    }
+}
 
 // Layout
 .content-pad {
