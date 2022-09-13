@@ -51,8 +51,14 @@
     }
 }
 
-@mixin card {
-    
+@mixin card($width, $height) {
+    width: $width;
+    height: $height;
+    padding: $width * 0.08 $height * 0.08;
+    color: $text-dark;
+    border: 1px solid $complement;
+    text-align: left;
+    transition: $default-transition;
 }
 
 @mixin floating-center {
