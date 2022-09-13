@@ -2,7 +2,6 @@
   <div id="home" class="content-view">
     <HeaderHome />
     <BlogCoverage />
-    <SearchBar />
     <BlogBrowser />
 
   </div>
