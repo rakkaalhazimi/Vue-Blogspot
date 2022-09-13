@@ -115,7 +115,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 0.8rem;
-  min-height: 50vh;
+  min-height: 80vh;
   color: $text-dark;
 }
 </style>
