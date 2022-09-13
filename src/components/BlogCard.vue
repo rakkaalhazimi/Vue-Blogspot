@@ -28,7 +28,7 @@ defineProps({
 <style lang="scss">
 .blog-card {
   @include flex-col($justify: space-between, $gap: 1rem);
-  @include card($blog-card-width, $blog-card-height);
+  @include card(100%, $blog-card-height);
 
   .blog-card-title {
     transition: $default-transition;
@@ -36,7 +36,6 @@ defineProps({
 
   &:hover {
     border: 1px solid $accent;
-    box-shadow: 0 0 5px $accent;
 
     .blog-card-title {
       color: $accent;
