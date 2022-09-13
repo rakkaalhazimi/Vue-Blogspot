@@ -54,7 +54,7 @@ footer {
 
   margin-top: auto;
   padding: 1rem 5vw;
-  background-color: $dominant;
+  background-color: $dominant-shade;
   color: $text-dark;
   border-top: 1px solid $complement;
 
