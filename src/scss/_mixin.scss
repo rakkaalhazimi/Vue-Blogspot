@@ -55,10 +55,20 @@
     width: $width;
     height: $height;
     padding: $width * 0.08 $height * 0.08;
-    color: $text-dark;
-    border: 1px solid $complement;
     text-align: left;
     transition: $default-transition;
+}
+
+@mixin hollow-card($width, $height) {
+    @include card($width, $height);
+    color: $text-dark;
+    border: 1px solid $complement;
+}
+
+@mixin filled-card($width, $height) {
+    @include card($width, $height);
+    background-color: $dominant-shade;
+    color: $text-dark;
 }
 
 @mixin floating-center {
