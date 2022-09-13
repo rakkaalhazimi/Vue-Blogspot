@@ -20,17 +20,17 @@ const { keywords, filteredPosts } = storeToRefs(usePostStore())
   grid-template-columns: repeat(2, auto);
   column-gap: 1rem;
   row-gap: 1rem;
-}
 
-@media (max-width: 600px) {
-  .blog-card-container {
+  @media (max-width: 600px) {
     grid-template-columns: repeat(1, auto);
   }
-}
 
-@media (min-width: 1200px) {
-  .blog-card-container {
+  @media (min-width: 1200px) {
     grid-template-columns: repeat(3, auto);
+  }
+
+  @media (min-width: 1440px) {
+    grid-template-columns: repeat(4, auto);
   }
 }
 </style>
