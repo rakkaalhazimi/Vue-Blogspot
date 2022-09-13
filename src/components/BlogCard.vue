@@ -56,13 +56,22 @@ defineProps({
   color: $text-dim;
 }
 
-.blog-card-link,
-.blog-card-image {
+.blog-card-body {
+  overflow: hidden;
+  text-align: center;
+}
+
+.blog-card-link {
   width: 100%;
   height: 100%;
+  background-color: $complement;
 }
 
 .blog-card-image {
   object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: auto;
 }
 </style>
