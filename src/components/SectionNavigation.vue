@@ -66,7 +66,7 @@ nav {
   @include sticky-top();
   @include flex-row($gap: 5rem);
 
-  padding: 1rem 5vw;
+  padding: $navbar-pad;
   width: 100%;
   background-color: $dominant-transparent;
   color: $text-dark;

@@ -53,7 +53,7 @@ footer {
   @include flex-row($justify: space-between);
 
   margin-top: auto;
-  padding: 1rem 5vw;
+  padding: $navbar-pad;
   background-color: $dominant-shade;
   color: $text-dark;
   border-top: 1px solid $complement;
