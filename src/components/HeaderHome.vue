@@ -6,7 +6,7 @@
         Where machine learning is taught concisely
       </p>
     </div>
-    <a href="#blog-cov"><button id="start-btn"></button></a>
+    <a href="#blog-cov"><button id="header-home-start"></button></a>
   </header>
 </template>
 
@@ -31,8 +31,11 @@
   }
 }
 
-#start-btn {
+#header-home-start {
   @include bottom-triangle();
-  color: $text-dark;
+
+  &:hover {
+    @include bottom-triangle-hover();
+  }
 }
 </style>
