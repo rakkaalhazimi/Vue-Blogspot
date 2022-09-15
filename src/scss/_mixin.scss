@@ -74,11 +74,36 @@
 }
 
 @mixin bottom-triangle {
+    position: relative;
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 50px 40px 0 40px;
+    border-width: 56px 40px 0 40px;
     border-color: $accent transparent transparent transparent;
+    transition: $default-transition;
+    
+
+    @keyframes pointing {
+        100% {
+            transform: translate(0, 40%);
+        }
+    }
+}
+
+@mixin bottom-triangle-hover {
+    animation: pointing .5s linear infinite alternate;
+}
+
+@mixin header-text {
+    font-size: 8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+@mixin subheader-text {
+    font-size: 3rem;
+    font-weight: normal;
+    text-align: center;
 }
 
 @mixin floating-center {
