@@ -2,49 +2,77 @@
   <div id="blog-cov">
 
     <!-- Title and subtitle -->
-    <h2 class="subtitle">Blog Coverage</h2>
-    <p class="desc">What topics will you mostly read here</p>
+    <h2 id="blog-cov-subheader">Coverage</h2>
+    <p id="blog-cov-desc">what will you learn</p>
 
     <!-- Image List -->
     <ul id="blog-cov-list">
       <li class="blog-cov-item">
-        <img src="@/assets/machine-learning.png" />
-        <p>Machine Learning</p>
+        <p>ML</p>
       </li>
       <li class="blog-cov-item">
-        <img src="@/assets/deep-learning.png" />
-        <p>Deep Learning</p>
+        <p>DL</p>
       </li>
       <li class="blog-cov-item">
-        <img src="@/assets/math.png" />
-        <p>Mathematics</p>
+        <p>MATH</p>
       </li>
       <li class="blog-cov-item">
-        <img src="@/assets/statistic.png" />
-        <p>Statistics</p>
+        <p>STATS</p>
       </li>
       <li class="blog-cov-item">
-        <img src="@/assets/python.png" />
-        <p>Python</p>
+        <p>PY</p>
       </li>
     </ul>
+
+    <!-- <a href="#blog-browse"><button id="blog-cov-next"></button></a> -->
+    <a href="#blog-browse"><button id="header-home-start"></button></a>
+    
   </div>
 </template>
 
 <style lang="scss">
 #blog-cov {
+  @include flex-col($justify: flex-start);
   padding: $content-pad;
-  color: $text-light;
-  background-color: $complement;
+  color: $text-dark;
+}
+
+#blog-cov-subheader {
+  @include subheader-text;
+}
+
+#blog-cov-desc {
+  margin-bottom: 2rem;
 }
 
 #blog-cov-list {
-  @include flex-row($wrap: wrap, $gap: 2rem);
+  @include flex-row($justify:center, $wrap: wrap, $gap: 3rem);
+  margin-bottom: 5rem;
 }
 
 .blog-cov-item {
+  @include flex-col($justify: center);
   width: 100px;
-  height: auto;
-  font-size: .9rem;
+  height: 100px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1.5rem;
+
+  &:nth-child(odd) {
+    background-color: $complement;
+    color: $text-light;
+  }
+  
+  &:nth-child(even) {
+    border: 1px solid $complement;
+  }
+}
+
+#blog-cov-next {
+  @include bottom-triangle();
+
+  &:hover {
+    @include bottom-triangle-hover();
+  }
 }
 </style>
