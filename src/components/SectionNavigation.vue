@@ -68,7 +68,6 @@ nav {
 
   padding: $navbar-pad;
   width: 100%;
-  background-color: $dominant-transparent;
   color: $text-dark;
   backdrop-filter: blur(3px);
 }
