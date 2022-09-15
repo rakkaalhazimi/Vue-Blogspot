@@ -73,6 +73,14 @@
     color: $text-light;
 }
 
+@mixin bottom-triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 40px 0 40px;
+    border-color: $accent transparent transparent transparent;
+}
+
 @mixin floating-center {
     position: fixed;
     top: 50%;

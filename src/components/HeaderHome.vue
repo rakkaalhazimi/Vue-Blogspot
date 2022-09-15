@@ -1,30 +1,38 @@
 <template>
   <header id="header-home" class="flex-col">
-    <h1 id="header-home-title"><span id="header-home-title-high">Recognize</span><br/>Machine Learning</h1>
-    <p id="header-home-subtitle">Where machine learning is taught concisely</p>
-    <a href="#blog-cov"><button id="start-btn">Start</button></a>
+    <div id="header-home-lable">
+      <h1 id="header-home-title">recognize.</h1>
+      <p id="header-home-subtitle">
+        Where machine learning is taught concisely
+      </p>
+    </div>
+    <a href="#blog-cov"><button id="start-btn"></button></a>
   </header>
 </template>
 
 <style lang="scss">
-  #header-home {
-    row-gap: 0;
-  }
+#header-home {
+  @include flex-col($justify: center);
+}
+
+#header-home-lable {
+  position: relative;
+  margin-bottom: 2rem;
 
   #header-home-title {
-    margin-bottom: 0.5rem;
-  }
-
-  #header-home-title-high {
-    color: $accent;
+    font-size: 8rem;
   }
 
   #header-home-subtitle {
-    margin-bottom: 2rem;
+    position: absolute;
+    bottom: 2%;
+    right: 0;
+    font-size: .9rem;
   }
+}
 
-  #start-btn {
-    @include hollow-btn();
-    color: $text-dark;
-  }
+#start-btn {
+  @include bottom-triangle();
+  color: $text-dark;
+}
 </style>
