@@ -8,7 +8,7 @@
 
     <div class="blog-card-body">
       <router-link :to="'/post/' + id" class="blog-card-link">
-        <img class="blog-card-image" src="../assets/logo.png" alt="Blog picture" />
+        <img class="blog-card-image" src="../assets/unsplash-small.jpg" alt="Blog picture" />
       </router-link>
     </div>
 
