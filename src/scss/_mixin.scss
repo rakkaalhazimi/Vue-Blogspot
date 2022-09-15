@@ -38,6 +38,7 @@
     background: transparent;
     color: $text-dark;
     border: 1px solid $complement;
+    border-radius: 4px;
 }
 
 @mixin icon-btn {
@@ -56,6 +57,7 @@
     height: $height;
     padding: $width * 0.08 $height * 0.08;
     text-align: left;
+    border-radius: 6px;
     transition: $default-transition;
 }
 
@@ -67,8 +69,8 @@
 
 @mixin filled-card($width, $height) {
     @include card($width, $height);
-    background-color: $dominant-shade;
-    color: $text-dark;
+    background-color: $complement;
+    color: $text-light;
 }
 
 @mixin floating-center {
