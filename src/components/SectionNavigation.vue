@@ -120,7 +120,7 @@ nav {
     height: 100vh;
 
     /* Color */
-    background-color: $dominant-shade;
+    background-color: $dominant;
     transition: $default-transition;
   }
 

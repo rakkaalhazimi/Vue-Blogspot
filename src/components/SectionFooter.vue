@@ -54,7 +54,7 @@ footer {
 
   margin-top: auto;
   padding: $navbar-pad;
-  background-color: $dominant-shade;
+  background-color: $dominant;
   color: $text-dark;
   border-top: 1px solid $complement;
 
