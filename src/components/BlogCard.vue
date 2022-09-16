@@ -28,7 +28,8 @@ defineProps({
 <style lang="scss">
 .blog-card {
   @include flex-col($justify: space-between, $gap: 0);
-  @include card(100%, $blog-card-height);
+  @include card(100%, 100%);
+  align-items: flex-start;
 }
 
 .blog-card-header {
