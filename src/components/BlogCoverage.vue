@@ -32,7 +32,7 @@
 
 <style lang="scss">
 #blog-cov {
-  @include flex-col($justify: flex-start);
+  @include flex-col($justify: center);
   padding: $content-pad;
   color: $text-dark;
 }
