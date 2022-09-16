@@ -18,16 +18,34 @@
 #header-home-lable {
   position: relative;
   margin-bottom: 2rem;
+}
 
-  #header-home-title {
-    font-size: 8rem;
+#header-home-title {
+  $font-size: 8rem;
+  font-size: $font-size;
+
+  @media (max-width: 768px) {
+    font-size: calc($font-size / 2);
   }
 
-  #header-home-subtitle {
-    position: absolute;
-    bottom: 2%;
-    right: 0;
-    font-size: .9rem;
+  @media (max-width: 350px) {
+    font-size: calc($font-size / 2.5);
+  }
+}
+
+#header-home-subtitle {
+  $font-size: .9rem;
+  position: absolute;
+  bottom: 2%;
+  right: 0;
+  font-size: $font-size;
+
+  @media (max-width: 768px) {
+    font-size: calc($font-size / 2);
+  }
+
+  @media (max-width: 350px) {
+    font-size: calc($font-size / 2.5);
   }
 }
 
