@@ -17,6 +17,7 @@ const postStore = usePostStore()
   }
 
   #search-input {
-    @include hollow-input;
+    @include filled-input;
+    width: 50vw;
   }
 </style>

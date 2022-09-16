@@ -33,13 +33,22 @@
     }
 }
 
-@mixin hollow-input {
+@mixin input {
     padding: .8em;
     width: 100%;
+    border-radius: 32px;
+}
+
+@mixin hollow-input {
+    @include input;
     background: transparent;
     color: $text-dark;
     border: 1px solid $complement;
-    border-radius: 4px;
+}
+
+@mixin filled-input {
+    @include input;
+    background-color: $complement;
 }
 
 @mixin icon-btn {
