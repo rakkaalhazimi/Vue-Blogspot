@@ -91,29 +91,47 @@
     border-width: 56px 40px 0 40px;
     border-color: $accent transparent transparent transparent;
     transition: $default-transition;
-    
+
 
     @keyframes pointing {
         100% {
             transform: translate(0, 40%);
         }
     }
-}
 
-@mixin bottom-triangle-hover {
-    animation: pointing .5s linear infinite alternate;
+    &:hover {
+        animation: pointing .5s linear infinite alternate;
+    }
 }
 
 @mixin header-text {
-    font-size: 8rem;
+    @include responsive-font-size($size: 8rem);
     font-weight: bold;
     text-align: center;
 }
 
 @mixin subheader-text {
-    font-size: 3rem;
+    @include responsive-font-size($size: 3rem);
     font-weight: normal;
     text-align: center;
+}
+
+@mixin desc-text {
+    font-weight: normal;
+    text-align: center;
+}
+
+@mixin responsive-font-size($size: 1rem) {
+    font-size: $size;
+
+    @media (max-width: 768px) {
+        font-size: calc($size / 2);
+    }
+
+    @media (max-width: 350px) {
+        font-size: calc($size / 2.5);
+    }
+
 }
 
 @mixin floating-center {

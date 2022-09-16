@@ -70,9 +70,5 @@
 #blog-cov-next {
   @include bottom-triangle();
   border-width: 28px 20px 0 20px;;
-
-  &:hover {
-    @include bottom-triangle-hover();
-  }
 }
 </style>
