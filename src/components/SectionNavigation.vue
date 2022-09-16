@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <h1 id="nav-logo" class="text-dark">ALHAZIMI</h1>
+    <h1 id="nav-logo" class="text-dark">recognize.</h1>
 
     <!-- Navbar links -->
     <ul id="nav-link-container" class="link-list">
