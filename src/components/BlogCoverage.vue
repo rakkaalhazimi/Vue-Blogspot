@@ -41,6 +41,7 @@
 }
 
 #blog-cov-desc {
+  @include desc-text;
   margin-bottom: 2rem;
 }
 

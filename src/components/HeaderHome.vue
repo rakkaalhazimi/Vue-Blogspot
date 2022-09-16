@@ -21,39 +21,17 @@
 }
 
 #header-home-title {
-  $font-size: 8rem;
-  font-size: $font-size;
-
-  @media (max-width: 768px) {
-    font-size: calc($font-size / 2);
-  }
-
-  @media (max-width: 350px) {
-    font-size: calc($font-size / 2.5);
-  }
+  @include header-text;
 }
 
 #header-home-subtitle {
-  $font-size: .9rem;
+  @include responsive-font-size($size:.9rem);
   position: absolute;
   bottom: 2%;
   right: 0;
-  font-size: $font-size;
-
-  @media (max-width: 768px) {
-    font-size: calc($font-size / 2);
-  }
-
-  @media (max-width: 350px) {
-    font-size: calc($font-size / 2.5);
-  }
 }
 
 #header-home-start {
   @include bottom-triangle();
-
-  &:hover {
-    @include bottom-triangle-hover();
-  }
 }
 </style>

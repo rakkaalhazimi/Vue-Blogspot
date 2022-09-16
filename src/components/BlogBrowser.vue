@@ -27,6 +27,10 @@ import SearchBar from "./SearchBar.vue";
 }
 
 #blog-browse-desc {
+  @include desc-text;
+}
+
+#blog-browse-desc {
   margin-bottom: 2rem;
 }
 </style>
