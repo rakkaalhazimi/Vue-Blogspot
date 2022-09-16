@@ -27,7 +27,7 @@
     </ul>
 
     <!-- Navbar menu bar -->
-    <button id="nav-menu-btn" class="text-dark" @click="showHideNavbar">
+    <button id="nav-menu-btn" @click="showHideNavbar">
       <i class="fa-solid fa-bars"></i>
     </button>
 
@@ -94,6 +94,7 @@ nav {
 
 #nav-menu-btn {
   display: none;
+  @include icon-btn;
 }
 
 
