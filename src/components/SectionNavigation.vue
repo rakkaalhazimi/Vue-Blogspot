@@ -27,7 +27,7 @@
     </ul>
 
     <!-- Navbar menu bar -->
-    <button id="nav-menu-btn" @click="showHideNavbar">
+    <button id="nav-menu-btn" @click="showHidesNavbar.show">
       <i class="fa-solid fa-bars"></i>
     </button>
 
@@ -51,8 +51,16 @@ onMounted(() => {
   adminOverlay = document.getElementById("admin-overlay")
 })
 
-function showHideNavbar() {
-  nav.style.left = nav.style.left != "0px" ? "0px" : "-40vw"
+const showHidesNavbar = {
+  init: undefined,
+  show: function() {
+    if (nav.style.left != "0px") {
+      this.init = nav.style.left
+      nav.style.left = "0px"
+
+    } else {
+      nav.style.left = this.init
+    }}
 }
 
 function showAdminLogin() {
@@ -104,6 +112,8 @@ nav {
   }
 
   #nav-link-container {
+    $width: 50vw;
+
     /* Display */
     flex-direction: column;
     row-gap: 1rem;
@@ -111,12 +121,11 @@ nav {
     /* Position */
     position: absolute;
     top: 0;
-    left: -40vw;
+    left: -$width;
 
     /* Size */
     padding-top: 1rem;
-    padding-left: 1rem;
-    width: 40vw;
+    width: $width;
     height: 100vh;
 
     /* Color */
