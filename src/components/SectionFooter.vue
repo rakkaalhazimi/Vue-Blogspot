@@ -1,11 +1,11 @@
 <template>
   <footer>
-    <div class="subcontainer">
+    <div id="contact-container">
 
-      <h4>Contact me</h4>
+      <h4 id="contact-title">Contact me</h4>
       <ul class="icon-list">
         <li>
-          <a class="icon-item" href="#">
+          <a class="icon-item" href="mailto:rakkakeren@gmail.com">
             <i class="fa-regular fa-envelope"></i>
           </a>
         </li>
@@ -31,17 +31,8 @@
         </li>
       </ul>
 
-    </div>
+      <p>Copyright all rights reserved. Design by Rakka</p>
 
-    <div class="subcontainer">
-      <h4>Made with</h4>
-      <ul class="icon-list">
-        <li>
-          <a class="icon-item" href="https://vuejs.org/">
-            <i class="fa-brands fa-vuejs"></i>
-          </a>
-        </li>
-      </ul>
     </div>
 
   </footer>
@@ -50,7 +41,7 @@
 
 <style lang="scss">
 footer {
-  @include flex-row($justify: space-between);
+  @include flex-col($justify: center);
 
   margin-top: auto;
   padding: $navbar-pad;
@@ -58,13 +49,17 @@ footer {
   color: $text-dark;
   border-top: 1px solid $complement;
 
-  & .subcontainer {
-    @include flex-col($gap: .5rem);
-    text-align: left;
+  & #contact-container {
+    @include flex-col($gap: 0rem);
+  }
+
+  & #contact-title {
+    margin-bottom: .5rem;
   }
 
   & .icon-list {
     @include flex-row();
+    margin-bottom: 2rem;
   }
 
   & .icon-item {
