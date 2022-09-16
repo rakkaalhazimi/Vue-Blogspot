@@ -53,14 +53,15 @@ onMounted(() => {
 
 const showHidesNavbar = {
   init: undefined,
-  show: function() {
+  show: function () {
     if (nav.style.left != "0px") {
       this.init = nav.style.left
       nav.style.left = "0px"
 
     } else {
       nav.style.left = this.init
-    }}
+    }
+  }
 }
 
 function showAdminLogin() {
@@ -78,40 +79,17 @@ nav {
   width: 100%;
   color: $text-dark;
   backdrop-filter: blur(3px);
+
+  @media (max-width: 600px) {
+    justify-content: space-between;
+  }
 }
 
 #nav-link-container {
   @include flex-row($gap: 3rem);
   width: 100%;
-}
 
-.nav-link {
-  color: $text-dark;
-  font-size: .9rem;
-  transition: $default-transition;
-
-  &:hover {
-    color: $accent;
-  }
-}
-
-#nav-login,
-#nav-logout {
-  margin-left: auto;
-}
-
-#nav-menu-btn {
-  display: none;
-  @include icon-btn;
-}
-
-
-@media (max-width: 600px) {
-  nav {
-    justify-content: space-between;
-  }
-
-  #nav-link-container {
+  @media (max-width: 600px) {
     $width: 50vw;
 
     /* Display */
@@ -132,15 +110,33 @@ nav {
     background-color: $dominant;
     transition: $default-transition;
   }
+}
 
-  #nav-login,
-  #nav-logout {
+.nav-link {
+  color: $text-dark;
+  font-size: .9rem;
+  transition: $default-transition;
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+#nav-login,
+#nav-logout {
+  margin-left: auto;
+
+  @media (max-width: 600px) {
     margin-left: 0;
   }
+}
 
-  #nav-menu-btn {
+#nav-menu-btn {
+  @include icon-btn;
+  display: none;
+
+  @media (max-width: 600px) {
     display: block;
   }
-
 }
 </style>
