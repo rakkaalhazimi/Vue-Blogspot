@@ -27,20 +27,12 @@ defineProps({
 
 <style lang="scss">
 .blog-card {
-  @include flex-col($justify: space-between, $gap: 1rem);
+  @include flex-col($justify: space-between, $gap: 0);
   @include card(100%, $blog-card-height);
+}
 
-  .blog-card-title {
-    transition: $default-transition;
-  }
-
-  &:hover {
-    border: 1px solid $accent;
-
-    .blog-card-title {
-      color: $accent;
-    }
-  }
+.blog-card-header {
+  width: 100%;
 }
 
 .blog-card-tag {
