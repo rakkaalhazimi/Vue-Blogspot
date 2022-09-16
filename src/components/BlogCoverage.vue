@@ -24,8 +24,7 @@
       </li>
     </ul>
 
-    <!-- <a href="#blog-browse"><button id="blog-cov-next"></button></a> -->
-    <a href="#blog-browse"><button id="header-home-start"></button></a>
+    <a href="#blog-browse"><button id="blog-cov-next"></button></a>
     
   </div>
 </template>
@@ -47,7 +46,7 @@
 
 #blog-cov-list {
   @include flex-row($justify:center, $wrap: wrap, $gap: 3rem);
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
 }
 
 .blog-cov-item {
@@ -70,6 +69,7 @@
 
 #blog-cov-next {
   @include bottom-triangle();
+  border-width: 28px 20px 0 20px;;
 
   &:hover {
     @include bottom-triangle-hover();
