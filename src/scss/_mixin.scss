@@ -15,62 +15,6 @@
     gap: $gap;
 }
 
-@mixin hollow-btn {
-    padding: 1em;
-    min-width: 10em;
-    border: 1px solid $complement;
-    transition: $default-transition;
-
-    &:hover {
-        color: $accent;
-        border: 1px solid $accent;
-    }
-
-    &:active {
-        color: $complement;
-        border: 1px solid $complement;
-        transition: 0s;
-    }
-}
-
-@mixin filled-btn {
-    padding: .5rem 1rem;
-    background-color: $accent;
-    color: $text-dark;
-    letter-spacing: 1px;
-    border-radius: 16px;
-    transition: $default-transition;
-}
-
-@mixin icon-btn {
-    background: transparent;
-    color: $text-dark;
-    font-size: 1.2rem;
-    transition: $default-transition;
-
-    &:hover {
-        color: $accent;
-    }
-}
-
-@mixin input {
-    padding: .8em;
-    width: 100%;
-    border-radius: 32px;
-}
-
-@mixin hollow-input {
-    @include input;
-    background: transparent;
-    color: $text-dark;
-    border: 1px solid $complement;
-}
-
-@mixin filled-input {
-    @include input;
-    background-color: $complement;
-}
-
 @mixin card($width, $height) {
     width: $width;
     height: $height;
@@ -169,34 +113,4 @@
         font-size: calc($size / 2.5);
     }
 
-}
-
-@mixin floating-center {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 3;
-}
-
-@mixin sticky-top {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
-
-@mixin overlay {
-    display: none;
-    position: fixed;
-    z-index: 2;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-@mixin glow {
-    background-color: $dominant;
-    color: $text-dark;
-    border-radius: 5px;
-    box-shadow: 0px 5px 10px $dominant-shade;
 }

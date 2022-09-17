@@ -40,4 +40,94 @@ header {
   min-height: 90vh;
   color: $text-dark;
 }
+
+// Inputs
+.input-text {
+  padding: .8em;
+  width: 100%;
+  border-radius: 32px;
+}
+
+.hollow-input-text {
+  @extend .input-text;
+  background: transparent;
+  color: $text-dark;
+  border: 1px solid $complement;
+}
+
+.filled-input-text {
+  @extend .input-text;
+  background-color: $complement;
+}
+
+// Buttons
+.filled-btn {
+  padding: .5rem 1rem;
+  background-color: $accent;
+  color: $text-dark;
+  letter-spacing: 1px;
+  border-radius: 16px;
+  transition: $default-transition;
+}
+
+.hollow-btn {
+  padding: .5rem 1rem;
+  border: 1px solid $complement;
+  transition: $default-transition;
+
+  &:hover {
+    color: $accent;
+    border: 1px solid $accent;
+  }
+
+  &:active {
+    color: $complement;
+    border: 1px solid $complement;
+    transition: 0s;
+  }
+}
+
+.icon-btn {
+  background: transparent;
+  color: $text-dark;
+  font-size: 1rem;
+  transition: $default-transition;
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+// Position
+.floating-center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+// Layer
+.overlay {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+// Effect
+.glow {
+  background-color: $dominant;
+  color: $text-dark;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px $dominant-shade;
+}
 </style>
