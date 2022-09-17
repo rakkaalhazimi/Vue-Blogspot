@@ -8,24 +8,32 @@
     <!-- Image List -->
     <ul id="blog-cov-list">
       <li class="blog-cov-item">
-        <p>ML</p>
+        <div class="blog-cov-item-triangle"></div>
+        <p class="blog-cov-item-title">Machine Learning</p>
+        <p class="blog-cov-item-desc">Learn from the features of data</p>
       </li>
       <li class="blog-cov-item">
-        <p>DL</p>
+        <div class="blog-cov-item-triangle"></div>
+        <p class="blog-cov-item-title">Deep Learning</p>
+        <p class="blog-cov-item-desc">Learn to create features from data</p>
       </li>
       <li class="blog-cov-item">
-        <p>MATH</p>
+        <div class="blog-cov-item-triangle"></div>
+        <p class="blog-cov-item-title">Mathematics</p>
+        <p class="blog-cov-item-desc">Craft real world formula</p>
       </li>
       <li class="blog-cov-item">
-        <p>STATS</p>
+        <div class="blog-cov-item-triangle"></div>
+        <p class="blog-cov-item-title">Statistics</p>
+        <p class="blog-cov-item-desc">Summary the collections of data</p>
       </li>
       <li class="blog-cov-item">
-        <p>PY</p>
+        <div class="blog-cov-item-triangle"></div>
+        <p class="blog-cov-item-title">Python</p>
+        <p class="blog-cov-item-desc">Simple programming language</p>
       </li>
     </ul>
 
-    <a href="#blog-browse"><button id="blog-cov-next"></button></a>
-    
   </div>
 </template>
 
@@ -46,30 +54,35 @@
 }
 
 #blog-cov-list {
-  @include flex-row($justify:center, $wrap: wrap, $gap: 3rem);
+  @include flex-row($wrap: wrap, $gap: 3rem);
   margin-bottom: 6rem;
 }
 
 .blog-cov-item {
-  @include flex-col($justify: center);
-  width: 100px;
-  height: 100px;
-  border-radius: 6px;
-  font-weight: bold;
-  font-size: 1.5rem;
+  @include flex-col($justify: center, $gap: .5rem);
+  @include filled-card($width: 295px, $height: 165px, $color: $dominant);
+  align-items: flex-start;
 
-  &:nth-child(odd) {
-    background-color: $complement;
-    color: $text-light;
+  &-title {
+    font-size: 1.25rem;
   }
-  
-  &:nth-child(even) {
-    border: 1px solid $complement;
-  }
-}
 
-#blog-cov-next {
-  @include bottom-triangle();
-  border-width: 28px 20px 0 20px;;
+  &-desc {
+    font-size: .8rem;
+  }
+
+  // Apply color and gradient to each card
+  @for $i from 1 through length($variants) {
+    $c: nth($variants, $i);
+
+    &:nth-child(#{$i}) {
+      background: radial-gradient(circle at top left, rgba($c, .3), rgba(0, 0, 0, 0) 150%);
+    }
+
+    &:nth-child(#{$i}) &-triangle {
+      @include top-triangle-test($width: 36px, $height: 32px, $color: $c);
+      margin-bottom: 1rem;
+    }
+  }
 }
 </style>
