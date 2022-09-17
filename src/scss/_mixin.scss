@@ -33,6 +33,26 @@
     }
 }
 
+@mixin filled-btn {
+    padding: .5rem 1rem;
+    background-color: $accent;
+    color: $text-dark;
+    letter-spacing: 1px;
+    border-radius: 16px;
+    transition: $default-transition;
+}
+
+@mixin icon-btn {
+    background: transparent;
+    color: $text-dark;
+    font-size: 1.2rem;
+    transition: $default-transition;
+
+    &:hover {
+        color: $accent;
+    }
+}
+
 @mixin input {
     padding: .8em;
     width: 100%;
@@ -51,23 +71,12 @@
     background-color: $complement;
 }
 
-@mixin icon-btn {
-    background: transparent;
-    color: $text-dark;
-    font-size: 1.2rem;
-    transition: $default-transition;
-
-    &:hover {
-        color: $accent;
-    }
-}
-
 @mixin card($width, $height) {
     width: $width;
     height: $height;
-    padding: $width * 0.08 $height * 0.08;
+    padding: $height* 0.08 $width * 0.08;
     text-align: left;
-    border-radius: 6px;
+    border-radius: 12px;
     transition: $default-transition;
 }
 
