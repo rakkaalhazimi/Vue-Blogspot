@@ -25,8 +25,8 @@ import SectionContent from "./components/SectionContent.vue"
   flex-direction: column;
   min-height: 100vh;
   font-family: sans-serif;
-  background: 
-    radial-gradient(circle at left top, rgba(255,252,252,.1) 0%, rgba(0,0,0,0) 30%);
+  background:
+    radial-gradient(circle at left top, rgba(255, 252, 252, .1) 0%, rgba(0, 0, 0, 0) 30%);
   background-color: $dominant;
   text-align: center;
 }
