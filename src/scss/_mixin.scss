@@ -85,32 +85,6 @@
     }
 }
 
-@mixin header-text {
-    @include responsive-font-size($size: 8rem);
-    font-weight: bold;
-    text-align: center;
-}
-
-@mixin subheader-text {
-    @include responsive-font-size($size: 3rem);
-    font-weight: normal;
-    text-align: center;
-}
-
-@mixin desc-text {
-    font-weight: normal;
-    text-align: center;
-}
-
-@mixin responsive-font-size($size: 1rem) {
-    font-size: $size;
-
-    @media (max-width: 768px) {
-        font-size: calc($size / 2);
-    }
-
-    @media (max-width: 350px) {
-        font-size: calc($size / 2.5);
-    }
-
+@mixin hard-text-scale($size) {
+    font-size: clamp(calc($size / 2.5), 10vw, $size);
 }

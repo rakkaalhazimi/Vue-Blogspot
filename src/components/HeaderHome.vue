@@ -1,8 +1,8 @@
 <template>
   <header id="header-home" class="flex-col">
     <div id="header-home-lable" class="medium-mb">
-      <h1 class="supertitle">recognize.</h1>
-      <p id="header-home-subtitle" class="subdesc">
+      <h1 class="supertitle-res">recognize.</h1>
+      <p id="header-home-subtitle" class="subdesc-res">
         Where machine learning is taught concisely
       </p>
     </div>

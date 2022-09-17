@@ -104,6 +104,11 @@ header {
   font-weight: bold;
 }
 
+.supertitle-res {
+  $size: 8rem;
+  @include hard-text-scale($size);
+}
+
 .title {
   font-size: 4rem;
   font-weight: bold;
@@ -126,6 +131,12 @@ header {
 
 .subdesc {
   font-size: .8rem;
+  font-weight: normal;
+}
+
+.subdesc-res {
+  $size: .8rem;
+  @include hard-text-scale($size);
   font-weight: normal;
 }
 
