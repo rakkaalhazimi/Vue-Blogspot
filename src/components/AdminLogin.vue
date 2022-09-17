@@ -7,12 +7,12 @@
 
     <h2 class="subtitle">LOGIN</h2>
 
-    <div class="form-item">
+    <div class="form-item medium-low-mb">
       <label for="admin-username">Username</label>
       <input id="admin-username" class="hollow-input-text" type="text" placeholder="username">
     </div>
 
-    <div class="form-item">
+    <div class="form-item medium-low-mb">
       <label for="admin-password">Password</label>
       <input id="admin-password" class="hollow-input-text" type="password" placeholder="password">
     </div>
@@ -69,6 +69,5 @@ function login() {
 
 .form-item {
   @include flex-col();
-  margin-bottom: 1rem;
 }
 </style>

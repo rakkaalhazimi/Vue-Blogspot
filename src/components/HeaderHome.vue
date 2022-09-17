@@ -1,8 +1,8 @@
 <template>
   <header id="header-home" class="flex-col">
-    <div id="header-home-lable">
-      <h1 id="header-home-title">recognize.</h1>
-      <p id="header-home-subtitle">
+    <div id="header-home-lable" class="medium-mb">
+      <h1 class="supertitle">recognize.</h1>
+      <p id="header-home-subtitle" class="subdesc">
         Where machine learning is taught concisely
       </p>
     </div>
@@ -17,15 +17,10 @@
 
 #header-home-lable {
   position: relative;
-  margin-bottom: 2rem;
-}
-
-#header-home-title {
-  @include header-text;
 }
 
 #header-home-subtitle {
-  @include responsive-font-size($size:.9rem);
+  // @include responsive-font-size($size:.9rem);
   position: absolute;
   bottom: 2%;
   right: 0;

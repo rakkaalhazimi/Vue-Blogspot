@@ -98,6 +98,64 @@ header {
   }
 }
 
+// Typography
+.supertitle {
+  font-size: 8rem;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.superdesc {
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+
+.desc {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.subdesc {
+  font-size: .8rem;
+  font-weight: normal;
+}
+
+.align-left {
+  text-align: left;
+}
+
+
+// Spacing
+.small-mb {
+  margin-bottom: .5rem;
+}
+
+.medium-low-mb {
+  margin-bottom: 1rem;
+}
+
+.medium-mb {
+  margin-bottom: 2rem;
+}
+
+.medium-high-mb {
+  margin-bottom: 3rem;
+}
+
+.large-mb {
+  margin-bottom: 5rem;
+}
+
+
 // Position
 .floating-center {
   position: fixed;
