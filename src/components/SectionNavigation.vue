@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <nav class="sticky-top">
     <h1 id="nav-logo" class="text-dark">recognize.</h1>
 
     <!-- Navbar links -->
@@ -27,7 +27,7 @@
     </ul>
 
     <!-- Navbar menu bar -->
-    <button id="nav-menu-btn" @click="showHidesNavbar.show">
+    <button id="nav-menu-btn" class="icon-btn" @click="showHidesNavbar.show">
       <i class="fa-solid fa-bars"></i>
     </button>
 
@@ -72,7 +72,6 @@ function showAdminLogin() {
 
 <style lang="scss">
 nav {
-  @include sticky-top();
   @include flex-row($gap: 5rem);
 
   padding: $navbar-pad;
@@ -132,7 +131,6 @@ nav {
 }
 
 #nav-menu-btn {
-  @include icon-btn;
   display: none;
 
   @media (max-width: 600px) {
