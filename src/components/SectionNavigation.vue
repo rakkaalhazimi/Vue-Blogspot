@@ -16,12 +16,9 @@
         <router-link to="/projects" class="nav-link">Projects</router-link>
       </li>
 
-      <!-- Navbar login button -->
-      <li id="nav-login" v-if="!userStore.isLogin">
-        <button @click="redirectAdminLogin" class="nav-link">Login</button>
-      </li>
-      <li id="nav-logout" v-if="userStore.isLogin">
-        <button @click="userStore.logout" class="nav-link">Logout</button>
+      <!-- Repo icon -->
+      <li id="repo-icon">
+        <button class="icon-btn"><i class="fa-brands fa-github"></i></button>
       </li>
 
     </ul>
@@ -35,12 +32,7 @@
 </template>
 
 <script setup>
-import router from '@/router';
 import { onMounted } from 'vue';
-import { useUserStore } from "../stores/user"
-
-
-const userStore = useUserStore()
 
 
 let nav
@@ -60,10 +52,6 @@ const showHidesNavbar = {
       nav.style.left = this.init
     }
   }
-}
-
-function redirectAdminLogin() {
-  router.push({name: "adminLogin"})
 }
 </script>
 
@@ -118,8 +106,7 @@ nav {
   }
 }
 
-#nav-login,
-#nav-logout {
+#repo-icon {
   margin-left: auto;
 
   @media (max-width: 600px) {
