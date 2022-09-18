@@ -17,11 +17,11 @@
       </li>
 
       <!-- Navbar login button -->
-      <li id="nav-login" v-if="!isLogin">
+      <li id="nav-login" v-if="!userStore.isLogin">
         <button @click="showAdminLogin" class="nav-link">Login</button>
       </li>
-      <li id="nav-logout" v-if="isLogin">
-        <button @click="userLogout" class="nav-link">Logout</button>
+      <li id="nav-logout" v-if="userStore.isLogin">
+        <button @click="userStore.logout" class="nav-link">Logout</button>
       </li>
 
     </ul>
@@ -36,12 +36,11 @@
 
 <script setup>
 import { onMounted } from 'vue';
-import { storeToRefs } from "pinia";
 import { useUserStore } from "../stores/user"
 
 
-const { isLogin } = storeToRefs(useUserStore())
-const { userLogout } = useUserStore()
+const userStore = useUserStore()
+
 
 let nav, admin, adminOverlay
 
