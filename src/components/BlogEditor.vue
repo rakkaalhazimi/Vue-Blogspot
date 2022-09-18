@@ -27,7 +27,7 @@
 
     <button class="hollow-btn" @click.prevent="showPreview">Publish</button>
 
-    <div ref="preview" class="preview"></div>
+    <div ref="preview" class="preview" contenteditable="true"></div>
 
   </form>
 
