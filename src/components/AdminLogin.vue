@@ -31,7 +31,7 @@ let adminForm, username, password
 
 // Before mount
 onBeforeMount(() => {
-  if (userStore.isLogin) {
+  if (userStore.isLogin == "true") {
     router.push({ name: "home" })
   }
 
