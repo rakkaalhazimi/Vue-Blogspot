@@ -70,6 +70,8 @@ header {
 .hollow-btn {
   padding: .5rem 1rem;
   border: 1px solid $complement;
+  color: $text-dark;
+  border-radius: 16px;
   transition: $default-transition;
 
   &:hover {
