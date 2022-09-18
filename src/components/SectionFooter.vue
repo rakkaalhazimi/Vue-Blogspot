@@ -31,7 +31,7 @@
         </li>
       </ul>
 
-      <p>Copyright all rights reserved. Design by Rakka</p>
+      <p class="subdesc">Copyright all rights reserved. Design by Rakka</p>
 
     </div>
 
