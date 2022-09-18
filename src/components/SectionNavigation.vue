@@ -18,7 +18,7 @@
 
       <!-- Navbar login button -->
       <li id="nav-login" v-if="!userStore.isLogin">
-        <button @click="showAdminLogin" class="nav-link">Login</button>
+        <button @click="redirectAdminLogin" class="nav-link">Login</button>
       </li>
       <li id="nav-logout" v-if="userStore.isLogin">
         <button @click="userStore.logout" class="nav-link">Logout</button>
@@ -35,6 +35,7 @@
 </template>
 
 <script setup>
+import router from '@/router';
 import { onMounted } from 'vue';
 import { useUserStore } from "../stores/user"
 
@@ -42,12 +43,10 @@ import { useUserStore } from "../stores/user"
 const userStore = useUserStore()
 
 
-let nav, admin, adminOverlay
+let nav
 
 onMounted(() => {
   nav = document.getElementById("nav-link-container")
-  admin = document.getElementById("admin-form")
-  adminOverlay = document.getElementById("admin-overlay")
 })
 
 const showHidesNavbar = {
@@ -63,9 +62,8 @@ const showHidesNavbar = {
   }
 }
 
-function showAdminLogin() {
-  admin.style.display = "flex";
-  adminOverlay.style.display = "block";
+function redirectAdminLogin() {
+  router.push({name: "adminLogin"})
 }
 </script>
 
