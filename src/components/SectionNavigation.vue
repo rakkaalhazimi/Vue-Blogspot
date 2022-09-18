@@ -18,7 +18,7 @@
 
       <!-- Repo icon -->
       <li id="repo-icon">
-        <button class="icon-btn"><i class="fa-brands fa-github"></i></button>
+        <a href="https://github.com/rakkaalhazimi/Vue-Blogspot" class="icon-btn" target="blank"><i class="fa-brands fa-github"></i></a>
       </li>
 
     </ul>
