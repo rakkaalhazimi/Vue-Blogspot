@@ -6,8 +6,8 @@ import router from "@/router"
 
 function userStore() {
 
-    // State
-    let isLogin = localStorage.getItem("isLogin") || ref(false)
+    // State    
+    let isLogin = ref(localStorage.getItem("isLogin")) || ref(false)
 
     // Watch
     watch(isLogin, (state) => {
@@ -17,14 +17,12 @@ function userStore() {
 
     // Actions
     function login() {
-        if (!isLogin.value) {
-            isLogin.value = true
-            router.push({name: "home"})
-        }
+        isLogin.value = true
+        router.push({name: "home"})
     }
 
     function logout() {
-        if (isLogin.value) {isLogin.value = false}
+        isLogin.value = false
     }
 
     // Getters

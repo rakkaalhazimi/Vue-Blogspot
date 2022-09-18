@@ -2,7 +2,7 @@
   <form id="admin-form">
 
     <h2 class="subtitle medium-mb">LOGIN</h2>
-    
+
     <div class="form-item medium-low-mb">
       <label for="admin-username">Username</label>
       <input id="admin-username" class="filled-input-text" type="text" placeholder="username">
@@ -31,7 +31,10 @@ let adminForm, username, password
 
 // Before mount
 onBeforeMount(() => {
-  if (userStore.isLogin) router.push({name: "home"})
+  if (userStore.isLogin) {
+    router.push({ name: "home" })
+  }
+
 })
 
 // After mount
@@ -51,7 +54,7 @@ function login() {
     // Reset form
     adminForm.reset()
 
-    
+
   } else alert("login gagal")
 }
 </script>
