@@ -26,6 +26,11 @@ const routes = [
     path: '/post/create',
     name: 'createPost',
     component: () => import ('../views/BlogEditorView.vue')
+  },
+  {
+    path: '/admin-login',
+    name: 'adminLogin',
+    component: () => import ('../views/AdminLoginView.vue'),
   }
 ]
 
