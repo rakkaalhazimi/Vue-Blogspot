@@ -1,20 +1,16 @@
 <template>
-  <form id="admin-form" class="floating-center glow">
+  <form id="admin-form">
 
-    <button class="close-btn" @click.prevent="hideAdminLogin">
-      <i class="fa-solid fa-xmark"></i>
-    </button>
-
-    <h2 class="subtitle">LOGIN</h2>
-
+    <h2 class="subtitle medium-mb">LOGIN</h2>
+    
     <div class="form-item medium-low-mb">
       <label for="admin-username">Username</label>
-      <input id="admin-username" class="hollow-input-text" type="text" placeholder="username">
+      <input id="admin-username" class="filled-input-text" type="text" placeholder="username">
     </div>
 
     <div class="form-item medium-low-mb">
       <label for="admin-password">Password</label>
-      <input id="admin-password" class="hollow-input-text" type="password" placeholder="password">
+      <input id="admin-password" class="filled-input-text" type="password" placeholder="password">
     </div>
 
     <button class="hollow-btn" @click.prevent="login">Login</button>
@@ -24,50 +20,51 @@
 </template>
 
 <script setup>
-import { onMounted } from "vue"
+import router from "@/router"
+import { onMounted, onBeforeMount } from "vue"
 import { useUserStore } from "../stores/user"
 
 
-const { userLogin } = useUserStore()
+const userStore = useUserStore()
+let adminForm, username, password
 
-let adminLogin, adminOverlay, username, password
 
+// Before mount
+onBeforeMount(() => {
+  if (userStore.isLogin) router.push({name: "home"})
+})
+
+// After mount
 onMounted(() => {
-  adminLogin = document.getElementById("admin-form")
-  adminOverlay = document.getElementById("admin-overlay")
+  adminForm = document.getElementById("admin-form")
   username = document.getElementById("admin-username")
   password = document.getElementById("admin-password")
 })
 
-function hideAdminLogin() {
-  adminLogin.style.display = "none"
-  adminOverlay.style.display = "none"
-}
 
 function login() {
   if (username.value == "rakka" && password.value == "rakka") {
     alert("login berhasil")
-    hideAdminLogin()
-    userLogin()
+    // Login the user
+    userStore.login()
 
+    // Reset form
+    adminForm.reset()
+
+    
   } else alert("login gagal")
-
-  adminLogin.reset()
 }
 </script>
 
 <style lang="scss">
 #admin-form {
-  @include flex-col();
-
-  display: none;
-  padding: max(4vw, 40px) max(3vw, 30px);
-  width: max(20vw, 300px);
-  height: auto;
-  text-align: left;
+  @include flex-col($justify: center);
+  color: $text-dark;
 }
 
 .form-item {
-  @include flex-col();
+  @include flex-col;
+  width: max(300px, 10vw);
+  max-width: calc(100% - 20px);
 }
 </style>
