@@ -1,19 +1,29 @@
-import { ref, computed } from "vue"
+import { ref, computed, watch } from "vue"
 import { defineStore } from "pinia"
+import router from "@/router"
 
 
 
 function userStore() {
 
     // State
-    let isLogin = ref(false)
+    let isLogin = localStorage.getItem("isLogin") || ref(false)
+
+    // Watch
+    watch(isLogin, (state) => {
+        // persist login state on every change
+        localStorage.setItem("isLogin", state)
+    })
 
     // Actions
-    function userLogin() {
-        if (!isLogin.value) {isLogin.value = true}
+    function login() {
+        if (!isLogin.value) {
+            isLogin.value = true
+            router.push({name: "home"})
+        }
     }
 
-    function userLogout() {
+    function logout() {
         if (isLogin.value) {isLogin.value = false}
     }
 
@@ -23,7 +33,7 @@ function userStore() {
         else {return false}
     })
 
-    return {isLogin, userLogin, userLogout, checkLogin}
+    return {isLogin, login, logout, checkLogin}
 }
 
 export const useUserStore = defineStore("user", userStore)
